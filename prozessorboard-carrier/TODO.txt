@@ -1,0 +1,7 @@
+ 
+- Wechselschalter ersetzen durch einfachen Schalter.
+- Beschriftung Wechselschalter (120Ohm geschalten oder nicht)
+- Position des JTAG Steckers überdenken
+- Beschriftung USART (RxD, TxD, GND)
+- Beschriftung CAN
+- Evtl. 2ter CAN Transceiver einsetzen

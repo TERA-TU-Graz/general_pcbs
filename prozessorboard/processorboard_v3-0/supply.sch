@@ -1,0 +1,449 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ft232rl
+LIBS:relais
+LIBS:Supply
+LIBS:tera_general
+LIBS:tera_logic
+LIBS:tera_processors
+LIBS:tera_switches
+LIBS:local_pwr
+LIBS:tera_connectors
+LIBS:tera_emc_prodection
+LIBS:local_special
+LIBS:processorboard_4layer4-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp "TERA TU Graz"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32-F405RGT6 U?
+U 8 1 57F984A6
+P 3300 4500
+AR Path="/57F984A6" Ref="U?"  Part="8" 
+AR Path="/57FF8496/57F984A6" Ref="U1"  Part="8" 
+F 0 "U1" H 3300 4900 60  0000 C CNN
+F 1 "STM32-F405RGT6" H 3300 4800 60  0000 C CNN
+F 2 "tera_atomic_ic:STM32-F405RGT6" H 3300 3850 60  0001 C CNN
+F 3 "" H 3250 4150 60  0001 C CNN
+	8    3300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C28
+U 1 1 57FC3BA6
+P 3950 3600
+F 0 "C28" V 3900 3700 50  0000 C CNN
+F 1 "2u2" V 3900 3500 50  0000 C CNN
+F 2 "tera_rlc:C_0805in" H 3950 3600 50  0001 C CNN
+F 3 "" H 3950 3600 50  0000 C CNN
+	1    3950 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C27
+U 1 1 57FC52A7
+P 3750 3600
+F 0 "C27" V 3700 3700 50  0000 C CNN
+F 1 "2u2" V 3700 3500 50  0000 C CNN
+F 2 "tera_rlc:C_0805in" H 3750 3600 50  0001 C CNN
+F 3 "" H 3750 3600 50  0000 C CNN
+	1    3750 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C25
+U 1 1 57FCAECB
+P 2900 3400
+F 0 "C25" V 2850 3500 50  0000 C CNN
+F 1 "100n" V 2850 3250 50  0000 C CNN
+F 2 "tera_rlc:C_0603in" H 2900 3400 50  0001 C CNN
+F 3 "" H 2900 3400 50  0000 C CNN
+	1    2900 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C26
+U 1 1 57FCCA2C
+P 2900 4900
+F 0 "C26" V 2850 4800 50  0000 C CNN
+F 1 "100n" V 2850 5050 50  0000 C CNN
+F 2 "tera_rlc:C_0603in" H 2900 4900 50  0001 C CNN
+F 3 "" H 2900 4900 50  0000 C CNN
+	1    2900 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C22
+U 1 1 57FCDD54
+P 2650 4900
+F 0 "C22" V 2600 4800 50  0000 C CNN
+F 1 "100n" V 2600 5050 50  0000 C CNN
+F 2 "tera_rlc:C_0603in" H 2650 4900 50  0001 C CNN
+F 3 "" H 2650 4900 50  0000 C CNN
+	1    2650 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C20
+U 1 1 57FCDDEB
+P 2350 4900
+F 0 "C20" V 2300 4800 50  0000 C CNN
+F 1 "100n" V 2300 5050 50  0000 C CNN
+F 2 "tera_rlc:C_0603in" H 2350 4900 50  0001 C CNN
+F 3 "" H 2350 4900 50  0000 C CNN
+	1    2350 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C19
+U 1 1 57FCDE81
+P 2100 4900
+F 0 "C19" V 2050 4800 50  0000 C CNN
+F 1 "100n" V 2050 5050 50  0000 C CNN
+F 2 "tera_rlc:C_0603in" H 2100 4900 50  0001 C CNN
+F 3 "" H 2100 4900 50  0000 C CNN
+	1    2100 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 4600 3750 4850
+Wire Wire Line
+	3750 4600 3650 4600
+Wire Wire Line
+	3650 4700 3750 4700
+Connection ~ 3750 4700
+Wire Wire Line
+	2900 4800 2900 4700
+Wire Wire Line
+	2650 4600 2650 4800
+Wire Wire Line
+	2100 4400 2100 4800
+Wire Wire Line
+	2000 5200 2900 5200
+Wire Wire Line
+	2900 5200 2900 5000
+Wire Wire Line
+	2650 5000 2650 5200
+Connection ~ 2650 5200
+Wire Wire Line
+	2350 5000 2350 5200
+Connection ~ 2350 5200
+Wire Wire Line
+	2100 5200 2100 5000
+$Comp
+L C_Small C21
+U 1 1 57FD814A
+P 2600 2150
+F 0 "C21" V 2550 2050 50  0000 C CNN
+F 1 "100n" V 2550 2300 50  0000 C CNN
+F 2 "tera_rlc:C_0603in" H 2600 2150 50  0001 C CNN
+F 3 "" H 2600 2150 50  0000 C CNN
+	1    2600 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 1950 2600 2050
+Wire Wire Line
+	2600 2250 2600 2450
+Wire Wire Line
+	2400 2450 3050 2450
+Wire Wire Line
+	2800 2450 2800 2250
+Connection ~ 2100 4400
+Connection ~ 2650 4600
+Connection ~ 2900 4700
+Wire Wire Line
+	2850 4700 2950 4700
+Wire Wire Line
+	2600 4600 2950 4600
+Wire Wire Line
+	2050 4400 2950 4400
+$Comp
+L STM32-F405RGT6 U?
+U 9 1 57FEF7D3
+P 3350 3250
+AR Path="/57FEF7D3" Ref="U?"  Part="9" 
+AR Path="/57FF8496/57FEF7D3" Ref="U1"  Part="9" 
+F 0 "U1" H 3350 3737 60  0000 C CNN
+F 1 "STM32-F405RGT6" H 3350 3631 60  0000 C CNN
+F 2 "tera_atomic_ic:STM32-F405RGT6" H 3350 2600 60  0001 C CNN
+F 3 "" H 3300 3300 60  0001 C CNN
+	9    3350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L STM32-F405RGT6 U?
+U 10 1 57FF252B
+P 3350 2150
+AR Path="/57FF252B" Ref="U?"  Part="10" 
+AR Path="/57FF8496/57FF252B" Ref="U1"  Part="10" 
+F 0 "U1" H 3577 2253 60  0000 L CNN
+F 1 "STM32-F405RGT6" H 3577 2147 60  0000 L CNN
+F 2 "tera_atomic_ic:STM32-F405RGT6" H 3350 1500 60  0001 C CNN
+F 3 "" H 3300 2200 60  0001 C CNN
+	10   3350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1950 3050 1950
+Wire Wire Line
+	3050 1950 3050 2050
+Wire Wire Line
+	3050 2450 3050 2250
+Connection ~ 2800 2450
+Wire Wire Line
+	2800 2050 2800 1950
+Connection ~ 2800 1950
+Text HLabel 2250 1850 1    40   BiDi ~ 0
+VDDA
+Connection ~ 2600 2450
+Connection ~ 2600 1950
+Text HLabel 2050 4400 0    40   Input ~ 0
+VDD
+Text HLabel 2300 4500 0    40   Input ~ 0
+VDD
+Text HLabel 2600 4600 0    40   Input ~ 0
+VDD
+Text HLabel 2850 4700 0    40   Input ~ 0
+VDD
+Wire Wire Line
+	2300 4500 2950 4500
+Connection ~ 2350 4500
+Wire Wire Line
+	2350 4500 2350 4800
+Text HLabel 2000 5200 0    40   Input ~ 0
+GND
+Connection ~ 2100 5200
+Text HLabel 3700 4850 0    40   Input ~ 0
+GND
+Wire Wire Line
+	3750 4850 3700 4850
+Wire Wire Line
+	3750 3200 3750 3500
+Wire Wire Line
+	3750 3350 3650 3350
+Wire Wire Line
+	3650 3250 3950 3250
+Wire Wire Line
+	3950 3200 3950 3500
+Wire Wire Line
+	3750 3700 3750 3800
+Wire Wire Line
+	3650 3800 3950 3800
+Wire Wire Line
+	3950 3800 3950 3700
+Text HLabel 3650 3800 0    40   Input ~ 0
+GND
+Connection ~ 3750 3800
+Wire Wire Line
+	2900 3150 2900 3300
+Wire Wire Line
+	2450 3150 3050 3150
+Text HLabel 2450 3150 0    40   Input ~ 0
+VBAT
+Connection ~ 2900 3150
+Text HLabel 2800 3500 0    40   Input ~ 0
+GND
+Wire Wire Line
+	2800 3500 2900 3500
+$Comp
+L Jumper_NO_Small JP4
+U 1 1 58008E63
+P 2650 3000
+F 0 "JP4" H 2650 3050 50  0000 C CNN
+F 1 "No_vbat" H 2650 2950 50  0000 C CNN
+F 2 "tera_general:SOLDERJUMPER_2" H 2650 3000 50  0001 C CNN
+F 3 "" H 2650 3000 50  0000 C CNN
+	1    2650 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 3100 2650 3150
+Connection ~ 2650 3150
+Text HLabel 2450 2850 0    40   Input ~ 0
+VDD
+Wire Wire Line
+	2450 2850 2650 2850
+Wire Wire Line
+	2650 2850 2650 2900
+Text HLabel 2400 2450 0    40   Input ~ 0
+GND
+$Comp
+L LM4132A-3.3 IC1
+U 1 1 57FE0E6E
+P 1850 2050
+F 0 "IC1" H 1850 2387 60  0000 C CNN
+F 1 "LM4132A-3.3" H 1850 2281 60  0000 C CNN
+F 2 "tera_atomic_ic:LM4132A" H 1850 2450 60  0001 C CNN
+F 3 "" H 1850 1950 60  0000 C CNN
+	1    1850 2050
+	1    0    0    -1  
+$EndComp
+Text HLabel 1200 1950 0    40   Input ~ 0
+5V
+Text HLabel 1200 2150 0    40   Input ~ 0
+GND
+Wire Wire Line
+	1200 1950 1550 1950
+Wire Wire Line
+	1450 1950 1450 2050
+Wire Wire Line
+	1450 2050 1550 2050
+Connection ~ 1450 1950
+Wire Wire Line
+	1200 2150 1550 2150
+Wire Wire Line
+	2250 1850 2250 1950
+Connection ~ 2250 1950
+Connection ~ 1350 1950
+Connection ~ 1350 2150
+$Comp
+L Led_Small D18
+U 1 1 5802039D
+P 5000 3300
+F 0 "D18" H 4950 3425 50  0000 L CNN
+F 1 "3v3_ok" H 4825 3200 50  0000 L CNN
+F 2 "tera_diodes:LED_0805" V 5000 3300 50  0001 C CNN
+F 3 "" V 5000 3300 50  0000 C CNN
+	1    5000 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 58020C20
+P 5000 3050
+F 0 "R6" H 5030 3070 50  0000 L CNN
+F 1 "3k3" H 5030 3010 50  0000 L CNN
+F 2 "tera_rlc:R_0805in" H 5000 3050 50  0001 C CNN
+F 3 "" H 5000 3050 50  0000 C CNN
+	1    5000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3150 5000 3200
+Wire Wire Line
+	5000 3400 5000 3450
+Text HLabel 5000 3450 3    40   Input ~ 0
+GND
+Wire Wire Line
+	5000 2850 5000 2950
+$Comp
+L Led_Small D19
+U 1 1 58023967
+P 5500 3300
+F 0 "D19" H 5450 3425 50  0000 L CNN
+F 1 "5v_ok" H 5325 3200 50  0000 L CNN
+F 2 "tera_diodes:LED_0805" V 5500 3300 50  0001 C CNN
+F 3 "" V 5500 3300 50  0000 C CNN
+	1    5500 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 5802396D
+P 5500 3050
+F 0 "R7" H 5530 3070 50  0000 L CNN
+F 1 "5k6" H 5530 3010 50  0000 L CNN
+F 2 "tera_rlc:R_0805in" H 5500 3050 50  0001 C CNN
+F 3 "" H 5500 3050 50  0000 C CNN
+	1    5500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3150 5500 3200
+Wire Wire Line
+	5500 3400 5500 3450
+Text HLabel 5500 3450 3    40   Input ~ 0
+GND
+Wire Wire Line
+	5500 2850 5500 2950
+Text HLabel 5500 2850 1    40   Input ~ 0
+5V
+Text HLabel 5000 2850 1    40   Input ~ 0
+VDD
+$Comp
+L PWR_FLAG #FLG6
+U 1 1 580259B6
+P 3950 3200
+F 0 "#FLG6" H 3950 3295 50  0001 C CNN
+F 1 "PWR_FLAG" H 3950 3300 15  0000 C CNN
+F 2 "" H 3950 3200 50  0000 C CNN
+F 3 "" H 3950 3200 50  0000 C CNN
+	1    3950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG5
+U 1 1 58025AC5
+P 3750 3200
+F 0 "#FLG5" H 3750 3295 50  0001 C CNN
+F 1 "PWR_FLAG" H 3750 3300 15  0000 C CNN
+F 2 "" H 3750 3200 50  0000 C CNN
+F 3 "" H 3750 3200 50  0000 C CNN
+	1    3750 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 3250
+Connection ~ 3750 3350
+$Comp
+L C_Small C24
+U 1 1 58033D95
+P 2800 2150
+F 0 "C24" V 2750 2050 50  0000 C CNN
+F 1 "1u" V 2750 2300 50  0000 C CNN
+F 2 "tera_rlc:C_0805in" H 2800 2150 50  0001 C CNN
+F 3 "" H 2800 2150 50  0000 C CNN
+	1    2800 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C18
+U 1 1 58034BB3
+P 1350 2050
+F 0 "C18" V 1300 1950 50  0000 C CNN
+F 1 "2u2" V 1300 2200 50  0000 C CNN
+F 2 "tera_rlc:C_0805in" H 1350 2050 50  0001 C CNN
+F 3 "" H 1350 2050 50  0000 C CNN
+	1    1350 2050
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

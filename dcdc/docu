@@ -1,0 +1,25 @@
+
+Abstand unten: 2,5mm (max) 
+Spulenhöhe: 12-13,5mm
+
+Gesammthöhe: 16mm!!
+
+L1
+Spule 100u  Farnell Best.Nr.:   2062696
+Spule 220u  Farnell Best.Nr.:   1653711
+
+C1,2,3: 100nf 100V 0805
+C4: CKG57NX7S2A226M   22uF 100V
+C5: TAJC686M020RNJ  68uF, 20V,  6x3.2x2.6mm
+
+eingangsdiode: rs 486-5154 , SMBJ58A
+
+Schaltdiode: rs: 708-2282
+
+IC1
+MAX5035
+A : 3V3
+B : 5V
+C : 12V
+D : ADJ
+

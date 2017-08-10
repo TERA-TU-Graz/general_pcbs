@@ -1,0 +1,23 @@
+Name     Description    Value    Package    Ordering
+C1       Capacitor      100nF    0805       Farnell: RS:
+C2       Capacitor      100nF    0805       Farnell: RS:
+C3       Capacitor      100nF    0805       Farnell: RS:
+C4       Capacitor      100nF    0805       Farnell: RS:
+C5       Capacitor      10-50uF  1210       Farnell: RS:
+C6       Capacitor      3.3nF    0805       Farnell: RS:
+C7       Capacitor      100nF    0805       Farnell: RS:
+C8       Capacitor      100uF    1210       Farnell: RS:
+L1       Inductance     6-10uH   1210       Farnell: RS:
+R1       Resistor       24 Ohm   0805       Farnell: RS:
+R2       Resistor       24 Ohm   0805       Farnell: RS:
+R3       Resistor       24 Ohm   0805       Farnell: RS:
+R4       Resistor       24 Ohm   0805       Farnell: RS:
+R5       Resistor       1 MOhm   0805       Farnell: RS:
+R6       Resistor       1 MOhm   0805       Farnell: RS:
+R7       Resistor       1 MOhm   0805       Farnell: RS:
+D1       Diode
+D2       (Schottky-)Diode
+U1       ADUM4160        
+U2       LT1376-5
+
+

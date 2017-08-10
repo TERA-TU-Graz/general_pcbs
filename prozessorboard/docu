@@ -1,0 +1,74 @@
+verfügbare ports on STM
+
+PA0 - 15
+PB0 - 15
+PC0 - 15
+PD2
+PH0,1
+
+VBAT
+VSSA
+VDDA
+
+VSS 2x
+VDD 4x
+VCAP_1
+VCAP_2
+
+NRST
+BOOT0
+
+entspricht 64 pins
+
+--------------------------------------------------
+Bauteile:
+Spannungsreferenz: Serie REF19x
+
+Stecker, hirose DF17, 30pol
+header: DF17(2.0)-30DP-0.5V -> platine, Träberboard, rs: 623-2534
+replaceable: DF17 (3.0)-30DS-0.5V -> aufsteckboard, Prozessorboard, rs: 623-2411
+
+Befestigungsschrauben
+M3, Loch 3,2
+M3 Schrauben die schon da sind
+Schlüsselweite imbus, 2,5 x 6
+Zylinderkopf, durchmesser: 5,5
+also 6mm platz um das loch
+
+Abstandhalter: 1733426 5mm M3
+
+taster: 479-1508
+
+quarz: 728-8222
+
+Kondensatoren:
+
+tantal: 4u7 , tantal C, 25V
+tantal: 1u, tantal A, 25V
+
+Keramik:
+2x 2u2  723-6366
+5x 100n
+1x  1u
+
+JTAG-STekcer: 8pol   673-7708 / 2112407
+
+--------------------------------------------------
+Peripherie ausgeführt über pins
+zusätzlich zum platinenstecker
+DAC: PA4,5 - X5
+CAN: PA11,12 - X4
+USART3: PC10,11 - X7
+USART1, I2C: PB6,7 - X6
+SPI: PB13,14,15 - X3
+
+ADC-pins
+PA: 0,1,2,3,4,5,6,7
+PB: 0,1,
+PC: 0,1,2,3,4,5
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+Title,Processorboard for XMC4200 processor
+Revision,3
+Date,2017-01-06
+Generated,Thu 16 Feb 2017 20:55:40 CET
+Company,TERA TU Graz
+Comment 1,Rene Pöschl
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,95
+Total Unique Parts,39
+
+
+
+Ref,Qty,HPN,Value,Footprint,
+C16 C19 C22 C20 C14 C13 C28 C27 C30 C31 C26 C17 C23 C25 C21 C7 C6 C4 C3 C2 C12 ,21,52-100n,100n,tera_rlc:C_0603in
+C15 ,1,52-47n0,47n,tera_rlc:C_0603in
+C29 ,1,50-100p,100p,tera_rlc:C_0603in
+C24 ,1,55-1u00,1u,tera_rlc:TantalC_SizeM-1608mm_H0.9mm
+C18 ,1,54-2u20,2u2,tera_rlc:TantalC_SizeP-2012mm_H1.2mm
+C5 C1 C32 ,3,55-10u0,10u,tera_rlc:TantalC_SizeP-2012mm_H1.2mm
+C11 C10 C9 C8 ,4,52-10p0,10p,tera_rlc:C_0402in
+D1 ,1,21-0003,LED1,tera_diodes:LED_0805
+D3 ,1,21-0001,LED2,tera_diodes:LED_0805
+D4 ,1,21-0004,LED3,tera_diodes:LED_0805
+D13 D12 ,2,21-9011,SUPPRESSOR,tera_sot:SOT-23
+D18 ,1,21-0002,3v3_ok,tera_diodes:LED_0805
+D19 ,1,21-0002,5v_ok,tera_diodes:LED_0805
+D2 ,1,21-1105,BAT54-02V,tera_diodes:BAT54-02V__sc79
+IC1 ,1,23-2006,LM4132A-3.3,tera_atomic_ic:LM4132A
+JP5 JP6 JP9 ,3, ,No_CAN0,tera_general:SOLDERJUMPER_2_1mm
+JP7 JP8 ,2, ,Jumper_NO_Small,tera_general:SOLDERJUMPER_2
+JP4 ,1, ,No_vbat,tera_general:SOLDERJUMPER_2
+L1 ,1,97-1001,CM_CHOKE,tera_rlc:L_ACT45B-XXX-2P_common-mode-choke
+P1 ,1,09-0315,left,tera_Connectors_other:DF17-40DS-0.5V
+P3 ,1,09-0315,right,tera_Connectors_other:DF17-40DS-0.5V
+P4 ,1,02-2902,CAN_CON_2pol,tera_Connectors_JST:JST_PH_B2B-PH-K_02x2.00mm_Straight
+P2 ,1,09-0403,TERA_Debug_14pol,tera_Connectors_other:Samtec_FTSH-107-01-L-DV-K
+R1 R2 R3 R7 ,4,11-5K10,5k1,tera_rlc:R_0603in
+R8 R23 ,2,11-56K0,56k,tera_rlc:R_0603in
+R24 R25 ,2,11-60R4,60R,tera_rlc:R_0603in
+R6 ,1,11-3K30,3k3,tera_rlc:R_0603in
+R5 R4 ,2,10-0R00,0R,tera_rlc:R_0402in
+R11 R12 R13 ,3,11-22R0,22R,tera_rlc:R_0603in
+R10 R9 ,2,11-4K70,4k7,tera_rlc:R_0603in
+R14 ,1,11-10K0,10k,tera_rlc:R_0603in
+S1 ,1,95-0003,Switch_CAN_R,tera_switches:CuK_JS202011CQN_DPDT
+S3 ,1,95-0022,SWITCH_02x2POS,tera_switches:MCDM(R)-02-T
+S4 ,1,95-0010,Reset,tera_switches:button_6x6mm
+U1 ,1,20-0022,XMC4200,tera_atomic_infineon:infineon_XMC4200-F64K256_AB
+U2 U3 ,2,20-1001,SN65HVD230,tera_atomic_ic:SN65HVD230
+Y2 ,1, ,32.768KHz,tera_general:Quarz_5x3.2mm_2pol
+Y1 ,1,29-0001,8MHz,tera_general:Quarz_5x3.2mm_2pol
+x3 x7 x11 x16 x17 x18 x12 x8 x4 x1 x5 x9 x13 x14 x15 x10 x6 x2 ,18, ,gnd_contact,local_footprints:Via
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated Thu 16 Feb 2017 20:55:40 CET
