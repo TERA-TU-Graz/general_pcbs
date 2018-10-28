@@ -1,46 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_pwr
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:local_special
+EESchema Schematic File Version 4
 LIBS:stm32f4-board_v3-x-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -55,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L STM32-F405RGT6 U?
+L tera_processors:STM32-F405RGT6 U?
 U 8 1 57F984A6
 P 3300 4500
 AR Path="/57F984A6" Ref="U?"  Part="8" 
@@ -69,7 +29,7 @@ F 4 "20-0020" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C25
+L Device:C_Small C25
 U 1 1 57FCAECB
 P 2900 3400
 F 0 "C25" V 2850 3500 50  0000 C CNN
@@ -81,7 +41,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C26
+L Device:C_Small C26
 U 1 1 57FCCA2C
 P 2900 4900
 F 0 "C26" V 2850 4800 50  0000 C CNN
@@ -93,7 +53,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C22
+L Device:C_Small C22
 U 1 1 57FCDD54
 P 2650 4900
 F 0 "C22" V 2600 4800 50  0000 C CNN
@@ -105,7 +65,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C20
+L Device:C_Small C20
 U 1 1 57FCDDEB
 P 2350 4900
 F 0 "C20" V 2300 4800 50  0000 C CNN
@@ -117,7 +77,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C19
+L Device:C_Small C19
 U 1 1 57FCDE81
 P 2100 4900
 F 0 "C19" V 2050 4800 50  0000 C CNN
@@ -129,7 +89,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L C_Small C21
+L Device:C_Small C21
 U 1 1 57FD814A
 P 2800 2150
 F 0 "C21" V 2750 2050 50  0000 C CNN
@@ -141,7 +101,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    1   
 $EndComp
 $Comp
-L STM32-F405RGT6 U?
+L tera_processors:STM32-F405RGT6 U?
 U 9 1 57FEF7D3
 P 3350 3250
 AR Path="/57FEF7D3" Ref="U?"  Part="9" 
@@ -155,7 +115,7 @@ F 4 "20-0020" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L STM32-F405RGT6 U?
+L tera_processors:STM32-F405RGT6 U?
 U 10 1 57FF252B
 P 3350 2150
 AR Path="/57FF252B" Ref="U?"  Part="10" 
@@ -169,7 +129,7 @@ F 4 "20-0020" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper_NO_Small JP4
+L Device:Jumper_NO_Small JP4
 U 1 1 58008E63
 P 2650 3000
 F 0 "JP4" H 2650 3050 50  0000 C CNN
@@ -180,7 +140,7 @@ F 3 "" H 2650 3000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LM4132A-3.3 IC1
+L Supply:LM4132A-3.3 IC1
 U 1 1 57FE0E6E
 P 1850 2050
 F 0 "IC1" H 1850 2387 60  0000 C CNN
@@ -192,7 +152,7 @@ F 4 "23-2006" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D18
+L Device:LED_Small D18
 U 1 1 5802039D
 P 5000 3300
 F 0 "D18" H 4950 3425 50  0000 L CNN
@@ -204,7 +164,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R6
+L Device:R_Small R6
 U 1 1 58020C20
 P 5000 3050
 F 0 "R6" H 5030 3070 50  0000 L CNN
@@ -216,7 +176,7 @@ F 4 "11-3K30" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D19
+L Device:LED_Small D19
 U 1 1 58023967
 P 5500 3300
 F 0 "D19" H 5450 3425 50  0000 L CNN
@@ -228,7 +188,7 @@ F 4 "21-0002" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Small R7
+L Device:R_Small R7
 U 1 1 5802396D
 P 5500 3050
 F 0 "R7" H 5530 3070 50  0000 L CNN
@@ -240,7 +200,7 @@ F 4 "11-5K10" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG059
+L power:PWR_FLAG #FLG059
 U 1 1 580259B6
 P 3950 3200
 F 0 "#FLG059" H 3950 3295 50  0001 C CNN
@@ -251,7 +211,7 @@ F 3 "" H 3950 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG060
+L power:PWR_FLAG #FLG060
 U 1 1 58025AC5
 P 3750 3200
 F 0 "#FLG060" H 3750 3295 50  0001 C CNN
@@ -262,7 +222,7 @@ F 3 "" H 3750 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C28
+L Device:CP_Small C28
 U 1 1 581F45C5
 P 3950 3600
 F 0 "C28" V 4000 3400 50  0000 L CNN
@@ -274,7 +234,7 @@ F 4 "54-2u20" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C27
+L Device:CP_Small C27
 U 1 1 581F499E
 P 3750 3600
 F 0 "C27" V 3800 3400 50  0000 L CNN
@@ -286,7 +246,7 @@ F 4 "54-2u20" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C24
+L Device:CP_Small C24
 U 1 1 581F4E0F
 P 2600 2150
 F 0 "C24" V 2650 1950 50  0000 L CNN
@@ -298,7 +258,7 @@ F 4 "55-1u00" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP_Small C18
+L Device:CP_Small C18
 U 1 1 58208671
 P 1350 2050
 F 0 "C18" V 1350 1750 50  0000 L CNN

@@ -1,0 +1,1306 @@
+EESchema Schematic File Version 2
+LIBS:tera-playboard-v3-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ft232rl
+LIBS:relais
+LIBS:Supply
+LIBS:tera_general
+LIBS:tera_switches
+LIBS:tera_logic
+LIBS:tera_processors
+LIBS:tera_connectors
+LIBS:tera_emc_prodection
+LIBS:tera-playboard-v3-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5050 5750 6250 5750
+Wire Wire Line
+	5050 5850 5950 5850
+Text HLabel 5950 7200 3    40   Input ~ 0
+GND
+Wire Wire Line
+	5050 5950 5650 5950
+Wire Wire Line
+	5050 5650 6950 5650
+$Comp
+L BSS205N Q6
+U 1 1 5AB935DD
+P 5650 6800
+F 0 "Q6" H 5738 6896 50  0000 L CNN
+F 1 "BSS205N" H 5738 6805 50  0000 L CNN
+F 2 "tera_atomic_infineon:BSS205N" H 5750 6775 50  0001 L CIN
+F 3 "" H 5750 6925 50  0000 L CNN
+F 4 "24-2050" H 5950 6700 60  0001 C CNN "HPN"
+	1    5650 6800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BSS205N Q7
+U 1 1 5AB935E4
+P 5950 6500
+F 0 "Q7" H 6038 6596 50  0000 L CNN
+F 1 "BSS205N" H 6038 6505 50  0000 L CNN
+F 2 "tera_atomic_infineon:BSS205N" H 6050 6475 50  0001 L CIN
+F 3 "" H 6050 6625 50  0000 L CNN
+F 4 "24-2050" H 6250 6400 60  0001 C CNN "HPN"
+	1    5950 6500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BSS205N Q8
+U 1 1 5AB935EB
+P 6250 6200
+F 0 "Q8" H 6338 6296 50  0000 L CNN
+F 1 "BSS205N" H 6338 6205 50  0000 L CNN
+F 2 "tera_atomic_infineon:BSS205N" H 6350 6175 50  0001 L CIN
+F 3 "" H 6350 6325 50  0000 L CNN
+F 4 "24-2050" H 6550 6100 60  0001 C CNN "HPN"
+	1    6250 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5950 5650 6600
+Wire Wire Line
+	5950 5850 5950 6300
+Wire Wire Line
+	6250 5750 6250 6000
+Wire Wire Line
+	5650 6900 5650 7100
+Wire Wire Line
+	5650 7100 6250 7100
+Wire Wire Line
+	6250 7100 6250 6300
+Wire Wire Line
+	5950 6600 5950 7200
+Connection ~ 5950 7100
+$Comp
+L CONN_01X04 P29
+U 1 1 5AB93601
+P 4850 5800
+F 0 "P29" H 4850 5550 50  0000 C CNN
+F 1 "Lowside_Switches" V 4950 5800 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 4850 5800 50  0001 C CNN
+F 3 "" H 4850 5800 50  0000 C CNN
+	1    4850 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 P32
+U 1 1 5AB93607
+P 7150 5800
+F 0 "P32" H 7150 5550 50  0000 C CNN
+F 1 "Gates" V 7250 5800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7150 5800 50  0001 C CNN
+F 3 "" H 7150 5800 50  0000 C CNN
+	1    7150 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6650 6200 6650 5750
+Wire Wire Line
+	6650 5750 6950 5750
+Wire Wire Line
+	6700 6500 6700 5850
+Wire Wire Line
+	6700 5850 6950 5850
+Wire Wire Line
+	6750 6800 6750 5950
+Wire Wire Line
+	6750 5950 6950 5950
+Text HLabel 7950 2300 3    40   Input ~ 0
+GND
+$Comp
+L ZENERsmall D11
+U 1 1 5AB9B3E0
+P 6950 2050
+F 0 "D11" V 6904 2119 50  0000 L CNN
+F 1 "5V" V 6995 2119 50  0000 L CNN
+F 2 "tera_diodes:SD05_tvs_5v" H 6950 2050 50  0001 C CNN
+F 3 "" H 6950 2050 50  0000 C CNN
+	1    6950 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R11
+U 1 1 5AB9B3E7
+P 7950 1600
+F 0 "R11" V 8000 1700 50  0000 L CNN
+F 1 "1K" V 8000 1400 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 7950 1600 50  0001 C CNN
+F 3 "" H 7950 1600 50  0000 C CNN
+F 4 "11-1K00" H 4200 -2000 50  0001 C CNN "HPN"
+	1    7950 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C26
+U 1 1 5AB9B3EE
+P 8250 2050
+F 0 "C26" V 8200 1850 50  0000 L CNN
+F 1 "100n" V 8200 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 8250 2050 50  0001 C CNN
+F 3 "" H 8250 2050 50  0000 C CNN
+F 4 "52-100n" H 4100 -1850 50  0001 C CNN "HPN"
+	1    8250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R12
+U 1 1 5AB9B3F5
+P 7950 1700
+F 0 "R12" V 8000 1800 50  0000 L CNN
+F 1 "1K" V 8000 1500 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 7950 1700 50  0001 C CNN
+F 3 "" H 7950 1700 50  0000 C CNN
+F 4 "11-1K00" H 4200 -1900 50  0001 C CNN "HPN"
+	1    7950 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R13
+U 1 1 5AB9B3FC
+P 7950 1800
+F 0 "R13" V 8000 1900 50  0000 L CNN
+F 1 "1K" V 8000 1600 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 7950 1800 50  0001 C CNN
+F 3 "" H 7950 1800 50  0000 C CNN
+F 4 "11-1K00" H 4200 -1800 50  0001 C CNN "HPN"
+	1    7950 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C28
+U 1 1 5AB9B403
+P 8450 2050
+F 0 "C28" V 8400 1850 50  0000 L CNN
+F 1 "100n" V 8400 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 8450 2050 50  0001 C CNN
+F 3 "" H 8450 2050 50  0000 C CNN
+F 4 "52-100n" H 4300 -1850 50  0001 C CNN "HPN"
+	1    8450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C30
+U 1 1 5AB9B40A
+P 8650 2050
+F 0 "C30" V 8600 1850 50  0000 L CNN
+F 1 "100n" V 8600 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 8650 2050 50  0001 C CNN
+F 3 "" H 8650 2050 50  0000 C CNN
+F 4 "52-100n" H 4500 -1850 50  0001 C CNN "HPN"
+	1    8650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C20
+U 1 1 5AB9B411
+P 7300 2050
+F 0 "C20" V 7250 1850 50  0000 L CNN
+F 1 "100n" V 7250 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 7300 2050 50  0001 C CNN
+F 3 "" H 7300 2050 50  0000 C CNN
+F 4 "52-100n" H 3150 -1850 50  0001 C CNN "HPN"
+	1    7300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C22
+U 1 1 5AB9B418
+P 7500 2050
+F 0 "C22" V 7450 1850 50  0000 L CNN
+F 1 "100n" V 7450 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 7500 2050 50  0001 C CNN
+F 3 "" H 7500 2050 50  0000 C CNN
+F 4 "52-100n" H 3350 -1850 50  0001 C CNN "HPN"
+	1    7500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C24
+U 1 1 5AB9B41F
+P 7700 2050
+F 0 "C24" V 7650 1850 50  0000 L CNN
+F 1 "100n" V 7650 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 7700 2050 50  0001 C CNN
+F 3 "" H 7700 2050 50  0000 C CNN
+F 4 "52-100n" H 3550 -1850 50  0001 C CNN "HPN"
+	1    7700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENERsmall D9
+U 1 1 5AB9B425
+P 6750 2050
+F 0 "D9" V 6704 2119 50  0000 L CNN
+F 1 "5V" V 6795 2119 50  0000 L CNN
+F 2 "tera_diodes:SD05_tvs_5v" H 6750 2050 50  0001 C CNN
+F 3 "" H 6750 2050 50  0000 C CNN
+	1    6750 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENERsmall D7
+U 1 1 5AB9B42B
+P 6550 2050
+F 0 "D7" V 6504 2119 50  0000 L CNN
+F 1 "5V" V 6595 2119 50  0000 L CNN
+F 2 "tera_diodes:SD05_tvs_5v" H 6550 2050 50  0001 C CNN
+F 3 "" H 6550 2050 50  0000 C CNN
+	1    6550 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2150 7300 2250
+Wire Wire Line
+	7300 2250 8650 2250
+Wire Wire Line
+	7950 2250 7950 2300
+Wire Wire Line
+	8650 2250 8650 2150
+Connection ~ 7950 2250
+Wire Wire Line
+	8450 2150 8450 2250
+Connection ~ 8450 2250
+Wire Wire Line
+	8250 2150 8250 2250
+Connection ~ 8250 2250
+Wire Wire Line
+	7700 2150 7700 2250
+Connection ~ 7700 2250
+Wire Wire Line
+	7500 2150 7500 2250
+Connection ~ 7500 2250
+Text HLabel 6750 2300 3    40   Input ~ 0
+GND
+Wire Wire Line
+	6750 2150 6750 2300
+Wire Wire Line
+	6950 2250 6950 2150
+Wire Wire Line
+	6550 2250 6950 2250
+Connection ~ 6750 2250
+Wire Wire Line
+	6550 2150 6550 2250
+$Comp
+L CONN_01X04 P30
+U 1 1 5AB9B444
+P 6150 1750
+F 0 "P30" H 6150 1500 50  0000 C CNN
+F 1 "5V_Inputs" V 6250 1750 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 6150 1750 50  0001 C CNN
+F 3 "" H 6150 1750 50  0000 C CNN
+	1    6150 1750
+	-1   0    0    1   
+$EndComp
+Text HLabel 6400 2000 3    40   Input ~ 0
+GND
+Wire Wire Line
+	6400 2000 6400 1900
+Wire Wire Line
+	6400 1900 6350 1900
+Wire Wire Line
+	6350 1800 7850 1800
+Wire Wire Line
+	6350 1700 7850 1700
+Wire Wire Line
+	6350 1600 7850 1600
+Wire Wire Line
+	7700 1950 7700 1600
+Connection ~ 7700 1600
+Wire Wire Line
+	7500 1950 7500 1700
+Connection ~ 7500 1700
+Wire Wire Line
+	7300 1950 7300 1800
+Connection ~ 7300 1800
+Wire Wire Line
+	6950 1950 6950 1600
+Connection ~ 6950 1600
+Wire Wire Line
+	6750 1950 6750 1700
+Connection ~ 6750 1700
+Wire Wire Line
+	6550 1950 6550 1800
+Connection ~ 6550 1800
+Wire Wire Line
+	8050 1600 9100 1600
+Wire Wire Line
+	8050 1700 9200 1700
+Wire Wire Line
+	8050 1800 9300 1800
+Wire Wire Line
+	8250 1600 8250 1950
+Connection ~ 8250 1600
+Wire Wire Line
+	8450 1700 8450 1950
+Connection ~ 8450 1700
+Wire Wire Line
+	8650 1800 8650 1950
+Connection ~ 8650 1800
+$Comp
+L CONN_01X03 P33
+U 1 1 5AB9B465
+P 9200 1300
+F 0 "P33" V 9165 1478 50  0000 L CNN
+F 1 "ProtectedInputs" V 9074 1478 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 9028 1478 50  0001 L CNN
+F 3 "" H 9200 1300 50  0000 C CNN
+	1    9200 1300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9100 1500 9100 2000
+Wire Wire Line
+	9200 1500 9200 2000
+Wire Wire Line
+	9300 1500 9300 2000
+Connection ~ 9100 1600
+Connection ~ 9200 1700
+Connection ~ 9300 1800
+$Comp
+L CONN_01X03 P34
+U 1 1 5AB9B471
+P 9200 2200
+F 0 "P34" V 9072 2378 50  0000 L CNN
+F 1 "ProtectedInputs" V 9163 2378 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 9028 2378 50  0001 L CNN
+F 3 "" H 9200 2200 50  0000 C CNN
+	1    9200 2200
+	0    1    1    0   
+$EndComp
+Text HLabel 7950 4300 3    40   Input ~ 0
+GND
+$Comp
+L R_Small R14
+U 1 1 5ABA64CF
+P 7950 3600
+F 0 "R14" V 8000 3700 50  0000 L CNN
+F 1 "1K" V 8000 3400 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 7950 3600 50  0001 C CNN
+F 3 "" H 7950 3600 50  0000 C CNN
+F 4 "11-1K00" H 4200 0   50  0001 C CNN "HPN"
+	1    7950 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C27
+U 1 1 5ABA64D6
+P 8250 4050
+F 0 "C27" V 8200 3850 50  0000 L CNN
+F 1 "100n" V 8200 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 8250 4050 50  0001 C CNN
+F 3 "" H 8250 4050 50  0000 C CNN
+F 4 "52-100n" H 4100 150 50  0001 C CNN "HPN"
+	1    8250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R15
+U 1 1 5ABA64DD
+P 7950 3700
+F 0 "R15" V 8000 3800 50  0000 L CNN
+F 1 "1K" V 8000 3500 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 7950 3700 50  0001 C CNN
+F 3 "" H 7950 3700 50  0000 C CNN
+F 4 "11-1K00" H 4200 100 50  0001 C CNN "HPN"
+	1    7950 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R16
+U 1 1 5ABA64E4
+P 7950 3800
+F 0 "R16" V 8000 3900 50  0000 L CNN
+F 1 "1K" V 8000 3600 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 7950 3800 50  0001 C CNN
+F 3 "" H 7950 3800 50  0000 C CNN
+F 4 "11-1K00" H 4200 200 50  0001 C CNN "HPN"
+	1    7950 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C29
+U 1 1 5ABA64EB
+P 8450 4050
+F 0 "C29" V 8400 3850 50  0000 L CNN
+F 1 "100n" V 8400 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 8450 4050 50  0001 C CNN
+F 3 "" H 8450 4050 50  0000 C CNN
+F 4 "52-100n" H 4300 150 50  0001 C CNN "HPN"
+	1    8450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C31
+U 1 1 5ABA64F2
+P 8650 4050
+F 0 "C31" V 8600 3850 50  0000 L CNN
+F 1 "100n" V 8600 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 8650 4050 50  0001 C CNN
+F 3 "" H 8650 4050 50  0000 C CNN
+F 4 "52-100n" H 4500 150 50  0001 C CNN "HPN"
+	1    8650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C21
+U 1 1 5ABA64F9
+P 7300 4050
+F 0 "C21" V 7250 3850 50  0000 L CNN
+F 1 "100n" V 7250 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 7300 4050 50  0001 C CNN
+F 3 "" H 7300 4050 50  0000 C CNN
+F 4 "52-100n" H 3150 150 50  0001 C CNN "HPN"
+	1    7300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C23
+U 1 1 5ABA6500
+P 7500 4050
+F 0 "C23" V 7450 3850 50  0000 L CNN
+F 1 "100n" V 7450 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 7500 4050 50  0001 C CNN
+F 3 "" H 7500 4050 50  0000 C CNN
+F 4 "52-100n" H 3350 150 50  0001 C CNN "HPN"
+	1    7500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C25
+U 1 1 5ABA6507
+P 7700 4050
+F 0 "C25" V 7650 3850 50  0000 L CNN
+F 1 "100n" V 7650 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 7700 4050 50  0001 C CNN
+F 3 "" H 7700 4050 50  0000 C CNN
+F 4 "52-100n" H 3550 150 50  0001 C CNN "HPN"
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENERsmall D8
+U 1 1 5ABA650D
+P 6550 4050
+F 0 "D8" V 6450 4050 50  0000 L CNN
+F 1 "3V3" V 6650 4050 50  0000 L CNN
+F 2 "tera_diodes:uClamp3310D_tvs_3v3" H 6550 4050 50  0001 C CNN
+F 3 "" H 6550 4050 50  0000 C CNN
+	1    6550 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 4150 7300 4250
+Wire Wire Line
+	7300 4250 8650 4250
+Wire Wire Line
+	7950 4250 7950 4300
+Wire Wire Line
+	8650 4250 8650 4150
+Connection ~ 7950 4250
+Wire Wire Line
+	8450 4150 8450 4250
+Connection ~ 8450 4250
+Wire Wire Line
+	8250 4150 8250 4250
+Connection ~ 8250 4250
+Wire Wire Line
+	7700 4150 7700 4250
+Connection ~ 7700 4250
+Wire Wire Line
+	7500 4150 7500 4250
+Connection ~ 7500 4250
+Text HLabel 6750 4300 3    40   Input ~ 0
+GND
+Wire Wire Line
+	6750 4150 6750 4300
+Wire Wire Line
+	6950 4250 6950 4150
+Wire Wire Line
+	6550 4250 6950 4250
+Connection ~ 6750 4250
+Wire Wire Line
+	6550 4150 6550 4250
+$Comp
+L CONN_01X04 P31
+U 1 1 5ABA6526
+P 6150 3750
+F 0 "P31" H 6150 3500 50  0000 C CNN
+F 1 "3V3_AnalogInputs" V 6250 3750 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 6150 3750 50  0001 C CNN
+F 3 "" H 6150 3750 50  0000 C CNN
+	1    6150 3750
+	-1   0    0    1   
+$EndComp
+Text HLabel 6400 4000 3    40   Input ~ 0
+GND
+Wire Wire Line
+	6400 4000 6400 3900
+Wire Wire Line
+	6400 3900 6350 3900
+Wire Wire Line
+	6350 3800 7850 3800
+Wire Wire Line
+	6350 3700 7850 3700
+Wire Wire Line
+	6350 3600 7850 3600
+Wire Wire Line
+	7700 3950 7700 3600
+Connection ~ 7700 3600
+Wire Wire Line
+	7500 3950 7500 3700
+Connection ~ 7500 3700
+Wire Wire Line
+	7300 3950 7300 3800
+Connection ~ 7300 3800
+Wire Wire Line
+	6950 3950 6950 3600
+Connection ~ 6950 3600
+Wire Wire Line
+	6750 3950 6750 3700
+Connection ~ 6750 3700
+Wire Wire Line
+	6550 3950 6550 3800
+Connection ~ 6550 3800
+Wire Wire Line
+	8050 3600 9100 3600
+Wire Wire Line
+	8050 3700 9200 3700
+Wire Wire Line
+	8050 3800 9300 3800
+Wire Wire Line
+	8250 3600 8250 3950
+Connection ~ 8250 3600
+Wire Wire Line
+	8450 3700 8450 3950
+Connection ~ 8450 3700
+Wire Wire Line
+	8650 3800 8650 3950
+Connection ~ 8650 3800
+$Comp
+L CONN_01X03 P35
+U 1 1 5ABA6547
+P 9200 3300
+F 0 "P35" V 9165 3478 50  0000 L CNN
+F 1 "ProtectedAnalogInput" V 9074 3478 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 9028 3478 50  0001 L CNN
+F 3 "" H 9200 3300 50  0000 C CNN
+	1    9200 3300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9100 3500 9100 4000
+Wire Wire Line
+	9200 3500 9200 4000
+Wire Wire Line
+	9300 3500 9300 4000
+Connection ~ 9100 3600
+Connection ~ 9200 3700
+Connection ~ 9300 3800
+$Comp
+L CONN_01X03 P36
+U 1 1 5ABA6553
+P 9200 4200
+F 0 "P36" V 9072 4378 50  0000 L CNN
+F 1 "ProtectedAnalogInput" V 9163 4378 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 9028 4378 50  0001 L CNN
+F 3 "" H 9200 4200 50  0000 C CNN
+	1    9200 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENERsmall D10
+U 1 1 5ABA6559
+P 6750 4050
+F 0 "D10" V 6650 4050 50  0000 L CNN
+F 1 "3V3" V 6850 4050 50  0000 L CNN
+F 2 "tera_diodes:uClamp3310D_tvs_3v3" H 6750 4050 50  0001 C CNN
+F 3 "" H 6750 4050 50  0000 C CNN
+	1    6750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENERsmall D12
+U 1 1 5ABA655F
+P 6950 4050
+F 0 "D12" V 6850 4050 50  0000 L CNN
+F 1 "3V3" V 7050 4050 50  0000 L CNN
+F 2 "tera_diodes:uClamp3310D_tvs_3v3" H 6950 4050 50  0001 C CNN
+F 3 "" H 6950 4050 50  0000 C CNN
+	1    6950 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 6800 6750 6800
+Wire Wire Line
+	6700 6500 6150 6500
+Wire Wire Line
+	6450 6200 6650 6200
+Wire Wire Line
+	2300 5750 3500 5750
+Wire Wire Line
+	2300 5850 3200 5850
+Text HLabel 3200 7200 3    40   Input ~ 0
+GND
+Wire Wire Line
+	2300 5950 2900 5950
+Wire Wire Line
+	2300 5650 4200 5650
+$Comp
+L BSS205N Q3
+U 1 1 5AC0F2D0
+P 2900 6800
+F 0 "Q3" H 2988 6896 50  0000 L CNN
+F 1 "BSS205N" H 2988 6805 50  0000 L CNN
+F 2 "tera_atomic_infineon:BSS205N" H 3000 6775 50  0001 L CIN
+F 3 "" H 3000 6925 50  0000 L CNN
+F 4 "24-2050" H 3200 6700 60  0001 C CNN "HPN"
+	1    2900 6800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BSS205N Q4
+U 1 1 5AC0F2D7
+P 3200 6500
+F 0 "Q4" H 3288 6596 50  0000 L CNN
+F 1 "BSS205N" H 3288 6505 50  0000 L CNN
+F 2 "tera_atomic_infineon:BSS205N" H 3300 6475 50  0001 L CIN
+F 3 "" H 3300 6625 50  0000 L CNN
+F 4 "24-2050" H 3500 6400 60  0001 C CNN "HPN"
+	1    3200 6500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L BSS205N Q5
+U 1 1 5AC0F2DE
+P 3500 6200
+F 0 "Q5" H 3588 6296 50  0000 L CNN
+F 1 "BSS205N" H 3588 6205 50  0000 L CNN
+F 2 "tera_atomic_infineon:BSS205N" H 3600 6175 50  0001 L CIN
+F 3 "" H 3600 6325 50  0000 L CNN
+F 4 "24-2050" H 3800 6100 60  0001 C CNN "HPN"
+	1    3500 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 5950 2900 6600
+Wire Wire Line
+	3200 5850 3200 6300
+Wire Wire Line
+	3500 5750 3500 6000
+Wire Wire Line
+	2900 6900 2900 7100
+Wire Wire Line
+	2900 7100 3500 7100
+Wire Wire Line
+	3500 7100 3500 6300
+Wire Wire Line
+	3200 6600 3200 7200
+Connection ~ 3200 7100
+$Comp
+L CONN_01X04 P3
+U 1 1 5AC0F2EC
+P 2100 5800
+F 0 "P3" H 2100 5550 50  0000 C CNN
+F 1 "Lowside_Switches" V 2200 5800 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 2100 5800 50  0001 C CNN
+F 3 "" H 2100 5800 50  0000 C CNN
+	1    2100 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 P22
+U 1 1 5AC0F2F2
+P 4400 5800
+F 0 "P22" H 4400 5550 50  0000 C CNN
+F 1 "Gates" V 4500 5800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4400 5800 50  0001 C CNN
+F 3 "" H 4400 5800 50  0000 C CNN
+	1    4400 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3900 6200 3900 5750
+Wire Wire Line
+	3900 5750 4200 5750
+Wire Wire Line
+	3950 6500 3950 5850
+Wire Wire Line
+	3950 5850 4200 5850
+Wire Wire Line
+	4000 6800 4000 5950
+Wire Wire Line
+	4000 5950 4200 5950
+Wire Wire Line
+	3100 6800 4000 6800
+Wire Wire Line
+	3950 6500 3400 6500
+Wire Wire Line
+	3700 6200 3900 6200
+Text HLabel 3700 4300 3    40   Input ~ 0
+GND
+$Comp
+L R_Small R5
+U 1 1 5AC13BF5
+P 3700 3600
+F 0 "R5" V 3750 3700 50  0000 L CNN
+F 1 "1K" V 3750 3400 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 3700 3600 50  0001 C CNN
+F 3 "" H 3700 3600 50  0000 C CNN
+F 4 "11-1K00" H -50 0   50  0001 C CNN "HPN"
+	1    3700 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C9
+U 1 1 5AC13BFC
+P 4000 4050
+F 0 "C9" V 3950 3850 50  0000 L CNN
+F 1 "100n" V 3950 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4000 4050 50  0001 C CNN
+F 3 "" H 4000 4050 50  0000 C CNN
+F 4 "52-100n" H -150 150 50  0001 C CNN "HPN"
+	1    4000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 5AC13C03
+P 3700 3700
+F 0 "R6" V 3750 3800 50  0000 L CNN
+F 1 "1K" V 3750 3500 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 3700 3700 50  0001 C CNN
+F 3 "" H 3700 3700 50  0000 C CNN
+F 4 "11-1K00" H -50 100 50  0001 C CNN "HPN"
+	1    3700 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 5AC13C0A
+P 3700 3800
+F 0 "R7" V 3750 3900 50  0000 L CNN
+F 1 "1K" V 3750 3600 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 3700 3800 50  0001 C CNN
+F 3 "" H 3700 3800 50  0000 C CNN
+F 4 "11-1K00" H -50 200 50  0001 C CNN "HPN"
+	1    3700 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C10
+U 1 1 5AC13C11
+P 4200 4050
+F 0 "C10" V 4150 3850 50  0000 L CNN
+F 1 "100n" V 4150 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4200 4050 50  0001 C CNN
+F 3 "" H 4200 4050 50  0000 C CNN
+F 4 "52-100n" H 50  150 50  0001 C CNN "HPN"
+	1    4200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C11
+U 1 1 5AC13C18
+P 4400 4050
+F 0 "C11" V 4350 3850 50  0000 L CNN
+F 1 "100n" V 4350 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4400 4050 50  0001 C CNN
+F 3 "" H 4400 4050 50  0000 C CNN
+F 4 "52-100n" H 250 150 50  0001 C CNN "HPN"
+	1    4400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 5AC13C1F
+P 3050 4050
+F 0 "C6" V 3000 3850 50  0000 L CNN
+F 1 "100n" V 3000 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3050 4050 50  0001 C CNN
+F 3 "" H 3050 4050 50  0000 C CNN
+F 4 "52-100n" H -1100 150 50  0001 C CNN "HPN"
+	1    3050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 5AC13C26
+P 3250 4050
+F 0 "C7" V 3200 3850 50  0000 L CNN
+F 1 "100n" V 3200 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3250 4050 50  0001 C CNN
+F 3 "" H 3250 4050 50  0000 C CNN
+F 4 "52-100n" H -900 150 50  0001 C CNN "HPN"
+	1    3250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 5AC13C2D
+P 3450 4050
+F 0 "C8" V 3400 3850 50  0000 L CNN
+F 1 "100n" V 3400 4100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3450 4050 50  0001 C CNN
+F 3 "" H 3450 4050 50  0000 C CNN
+F 4 "52-100n" H -700 150 50  0001 C CNN "HPN"
+	1    3450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENERsmall D1
+U 1 1 5AC13C33
+P 2300 4050
+F 0 "D1" V 2200 4050 50  0000 L CNN
+F 1 "3V3" V 2400 4050 50  0000 L CNN
+F 2 "tera_diodes:uClamp3310D_tvs_3v3" H 2300 4050 50  0001 C CNN
+F 3 "" H 2300 4050 50  0000 C CNN
+	1    2300 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 4150 3050 4250
+Wire Wire Line
+	3050 4250 4400 4250
+Wire Wire Line
+	3700 4250 3700 4300
+Wire Wire Line
+	4400 4250 4400 4150
+Connection ~ 3700 4250
+Wire Wire Line
+	4200 4150 4200 4250
+Connection ~ 4200 4250
+Wire Wire Line
+	4000 4150 4000 4250
+Connection ~ 4000 4250
+Wire Wire Line
+	3450 4150 3450 4250
+Connection ~ 3450 4250
+Wire Wire Line
+	3250 4150 3250 4250
+Connection ~ 3250 4250
+Text HLabel 2500 4300 3    40   Input ~ 0
+GND
+Wire Wire Line
+	2500 4150 2500 4300
+Wire Wire Line
+	2700 4250 2700 4150
+Wire Wire Line
+	2300 4250 2700 4250
+Connection ~ 2500 4250
+Wire Wire Line
+	2300 4150 2300 4250
+$Comp
+L CONN_01X04 P24
+U 1 1 5AC13C4C
+P 1900 3750
+F 0 "P24" H 1900 3500 50  0000 C CNN
+F 1 "3V3_AnalogInputs" V 2000 3750 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 1900 3750 50  0001 C CNN
+F 3 "" H 1900 3750 50  0000 C CNN
+	1    1900 3750
+	-1   0    0    1   
+$EndComp
+Text HLabel 2150 4000 3    40   Input ~ 0
+GND
+Wire Wire Line
+	2150 4000 2150 3900
+Wire Wire Line
+	2150 3900 2100 3900
+Wire Wire Line
+	2100 3800 3600 3800
+Wire Wire Line
+	2100 3700 3600 3700
+Wire Wire Line
+	2100 3600 3600 3600
+Wire Wire Line
+	3450 3950 3450 3600
+Connection ~ 3450 3600
+Wire Wire Line
+	3250 3950 3250 3700
+Connection ~ 3250 3700
+Wire Wire Line
+	3050 3950 3050 3800
+Connection ~ 3050 3800
+Wire Wire Line
+	2700 3950 2700 3600
+Connection ~ 2700 3600
+Wire Wire Line
+	2500 3950 2500 3700
+Connection ~ 2500 3700
+Wire Wire Line
+	2300 3950 2300 3800
+Connection ~ 2300 3800
+Wire Wire Line
+	3800 3600 4850 3600
+Wire Wire Line
+	3800 3700 4950 3700
+Wire Wire Line
+	3800 3800 5050 3800
+Wire Wire Line
+	4000 3600 4000 3950
+Connection ~ 4000 3600
+Wire Wire Line
+	4200 3700 4200 3950
+Connection ~ 4200 3700
+Wire Wire Line
+	4400 3800 4400 3950
+Connection ~ 4400 3800
+$Comp
+L CONN_01X03 P25
+U 1 1 5AC13C6D
+P 4950 3300
+F 0 "P25" V 4915 3478 50  0000 L CNN
+F 1 "ProtectedAnalogInput" V 4824 3478 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 4778 3478 50  0001 L CNN
+F 3 "" H 4950 3300 50  0000 C CNN
+	1    4950 3300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4850 3500 4850 4000
+Wire Wire Line
+	4950 3500 4950 4000
+Wire Wire Line
+	5050 3500 5050 4000
+Connection ~ 4850 3600
+Connection ~ 4950 3700
+Connection ~ 5050 3800
+$Comp
+L CONN_01X03 P26
+U 1 1 5AC13C79
+P 4950 4200
+F 0 "P26" V 4822 4378 50  0000 L CNN
+F 1 "ProtectedAnalogInput" V 4913 4378 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 4778 4378 50  0001 L CNN
+F 3 "" H 4950 4200 50  0000 C CNN
+	1    4950 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENERsmall D2
+U 1 1 5AC13C7F
+P 2500 4050
+F 0 "D2" V 2400 4050 50  0000 L CNN
+F 1 "3V3" V 2600 4050 50  0000 L CNN
+F 2 "tera_diodes:uClamp3310D_tvs_3v3" H 2500 4050 50  0001 C CNN
+F 3 "" H 2500 4050 50  0000 C CNN
+	1    2500 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENERsmall D3
+U 1 1 5AC13C85
+P 2700 4050
+F 0 "D3" V 2600 4050 50  0000 L CNN
+F 1 "3V3" V 2800 4050 50  0000 L CNN
+F 2 "tera_diodes:uClamp3310D_tvs_3v3" H 2700 4050 50  0001 C CNN
+F 3 "" H 2700 4050 50  0000 C CNN
+	1    2700 4050
+	0    1    1    0   
+$EndComp
+Text HLabel 3700 2300 3    40   Input ~ 0
+GND
+$Comp
+L ZENERsmall D6
+U 1 1 5AC14696
+P 2700 2050
+F 0 "D6" V 2654 2119 50  0000 L CNN
+F 1 "5V" V 2745 2119 50  0000 L CNN
+F 2 "tera_diodes:SD05_tvs_5v" H 2700 2050 50  0001 C CNN
+F 3 "" H 2700 2050 50  0000 C CNN
+	1    2700 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R8
+U 1 1 5AC1469D
+P 3700 1600
+F 0 "R8" V 3750 1700 50  0000 L CNN
+F 1 "1K" V 3750 1400 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 3700 1600 50  0001 C CNN
+F 3 "" H 3700 1600 50  0000 C CNN
+F 4 "11-1K00" H -50 -2000 50  0001 C CNN "HPN"
+	1    3700 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C15
+U 1 1 5AC146A4
+P 4000 2050
+F 0 "C15" V 3950 1850 50  0000 L CNN
+F 1 "100n" V 3950 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4000 2050 50  0001 C CNN
+F 3 "" H 4000 2050 50  0000 C CNN
+F 4 "52-100n" H -150 -1850 50  0001 C CNN "HPN"
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R9
+U 1 1 5AC146AB
+P 3700 1700
+F 0 "R9" V 3750 1800 50  0000 L CNN
+F 1 "1K" V 3750 1500 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 3700 1700 50  0001 C CNN
+F 3 "" H 3700 1700 50  0000 C CNN
+F 4 "11-1K00" H -50 -1900 50  0001 C CNN "HPN"
+	1    3700 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R10
+U 1 1 5AC146B2
+P 3700 1800
+F 0 "R10" V 3750 1900 50  0000 L CNN
+F 1 "1K" V 3750 1600 50  0000 L CNN
+F 2 "tera_rlc:R_0603in" H 3700 1800 50  0001 C CNN
+F 3 "" H 3700 1800 50  0000 C CNN
+F 4 "11-1K00" H -50 -1800 50  0001 C CNN "HPN"
+	1    3700 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C17
+U 1 1 5AC146B9
+P 4200 2050
+F 0 "C17" V 4150 1850 50  0000 L CNN
+F 1 "100n" V 4150 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4200 2050 50  0001 C CNN
+F 3 "" H 4200 2050 50  0000 C CNN
+F 4 "52-100n" H 50  -1850 50  0001 C CNN "HPN"
+	1    4200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C19
+U 1 1 5AC146C0
+P 4400 2050
+F 0 "C19" V 4350 1850 50  0000 L CNN
+F 1 "100n" V 4350 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 4400 2050 50  0001 C CNN
+F 3 "" H 4400 2050 50  0000 C CNN
+F 4 "52-100n" H 250 -1850 50  0001 C CNN "HPN"
+	1    4400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C12
+U 1 1 5AC146C7
+P 3050 2050
+F 0 "C12" V 3000 1850 50  0000 L CNN
+F 1 "100n" V 3000 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3050 2050 50  0001 C CNN
+F 3 "" H 3050 2050 50  0000 C CNN
+F 4 "52-100n" H -1100 -1850 50  0001 C CNN "HPN"
+	1    3050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C13
+U 1 1 5AC146CE
+P 3250 2050
+F 0 "C13" V 3200 1850 50  0000 L CNN
+F 1 "100n" V 3200 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3250 2050 50  0001 C CNN
+F 3 "" H 3250 2050 50  0000 C CNN
+F 4 "52-100n" H -900 -1850 50  0001 C CNN "HPN"
+	1    3250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C14
+U 1 1 5AC146D5
+P 3450 2050
+F 0 "C14" V 3400 1850 50  0000 L CNN
+F 1 "100n" V 3400 2100 50  0000 L CNN
+F 2 "tera_rlc:C_0603in" H 3450 2050 50  0001 C CNN
+F 3 "" H 3450 2050 50  0000 C CNN
+F 4 "52-100n" H -700 -1850 50  0001 C CNN "HPN"
+	1    3450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENERsmall D5
+U 1 1 5AC146DB
+P 2500 2050
+F 0 "D5" V 2454 2119 50  0000 L CNN
+F 1 "5V" V 2545 2119 50  0000 L CNN
+F 2 "tera_diodes:SD05_tvs_5v" H 2500 2050 50  0001 C CNN
+F 3 "" H 2500 2050 50  0000 C CNN
+	1    2500 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L ZENERsmall D4
+U 1 1 5AC146E1
+P 2300 2050
+F 0 "D4" V 2254 2119 50  0000 L CNN
+F 1 "5V" V 2345 2119 50  0000 L CNN
+F 2 "tera_diodes:SD05_tvs_5v" H 2300 2050 50  0001 C CNN
+F 3 "" H 2300 2050 50  0000 C CNN
+	1    2300 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 2150 3050 2250
+Wire Wire Line
+	3050 2250 4400 2250
+Wire Wire Line
+	3700 2250 3700 2300
+Wire Wire Line
+	4400 2250 4400 2150
+Connection ~ 3700 2250
+Wire Wire Line
+	4200 2150 4200 2250
+Connection ~ 4200 2250
+Wire Wire Line
+	4000 2150 4000 2250
+Connection ~ 4000 2250
+Wire Wire Line
+	3450 2150 3450 2250
+Connection ~ 3450 2250
+Wire Wire Line
+	3250 2150 3250 2250
+Connection ~ 3250 2250
+Text HLabel 2500 2300 3    40   Input ~ 0
+GND
+Wire Wire Line
+	2500 2150 2500 2300
+Wire Wire Line
+	2700 2250 2700 2150
+Wire Wire Line
+	2300 2250 2700 2250
+Connection ~ 2500 2250
+Wire Wire Line
+	2300 2150 2300 2250
+$Comp
+L CONN_01X04 P27
+U 1 1 5AC146FA
+P 1900 1750
+F 0 "P27" H 1900 1500 50  0000 C CNN
+F 1 "5V_Inputs" V 2000 1750 50  0000 C CNN
+F 2 "tera_Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 1900 1750 50  0001 C CNN
+F 3 "" H 1900 1750 50  0000 C CNN
+	1    1900 1750
+	-1   0    0    1   
+$EndComp
+Text HLabel 2150 2000 3    40   Input ~ 0
+GND
+Wire Wire Line
+	2150 2000 2150 1900
+Wire Wire Line
+	2150 1900 2100 1900
+Wire Wire Line
+	2100 1800 3600 1800
+Wire Wire Line
+	2100 1700 3600 1700
+Wire Wire Line
+	2100 1600 3600 1600
+Wire Wire Line
+	3450 1950 3450 1600
+Connection ~ 3450 1600
+Wire Wire Line
+	3250 1950 3250 1700
+Connection ~ 3250 1700
+Wire Wire Line
+	3050 1950 3050 1800
+Connection ~ 3050 1800
+Wire Wire Line
+	2700 1950 2700 1600
+Connection ~ 2700 1600
+Wire Wire Line
+	2500 1950 2500 1700
+Connection ~ 2500 1700
+Wire Wire Line
+	2300 1950 2300 1800
+Connection ~ 2300 1800
+Wire Wire Line
+	3800 1600 4850 1600
+Wire Wire Line
+	3800 1700 4950 1700
+Wire Wire Line
+	3800 1800 5050 1800
+Wire Wire Line
+	4000 1600 4000 1950
+Connection ~ 4000 1600
+Wire Wire Line
+	4200 1700 4200 1950
+Connection ~ 4200 1700
+Wire Wire Line
+	4400 1800 4400 1950
+Connection ~ 4400 1800
+$Comp
+L CONN_01X03 P28
+U 1 1 5AC1471B
+P 4950 1300
+F 0 "P28" V 4915 1478 50  0000 L CNN
+F 1 "ProtectedInputs" V 4824 1478 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 4778 1478 50  0001 L CNN
+F 3 "" H 4950 1300 50  0000 C CNN
+	1    4950 1300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4850 1500 4850 2000
+Wire Wire Line
+	4950 1500 4950 2000
+Wire Wire Line
+	5050 1500 5050 2000
+Connection ~ 4850 1600
+Connection ~ 4950 1700
+Connection ~ 5050 1800
+$Comp
+L CONN_01X03 P39
+U 1 1 5AC14727
+P 4950 2200
+F 0 "P39" V 4822 2378 50  0000 L CNN
+F 1 "ProtectedInputs" V 4913 2378 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" V 4778 2378 50  0001 L CNN
+F 3 "" H 4950 2200 50  0000 C CNN
+	1    4950 2200
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

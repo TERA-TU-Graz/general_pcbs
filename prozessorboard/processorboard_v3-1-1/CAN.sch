@@ -1,46 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_pwr
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:local_special
+EESchema Schematic File Version 4
 LIBS:stm32f4-board_v3-x-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -55,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SUPPRESSOR D13
+L tera_general:SUPPRESSOR D13
 U 1 1 56F60DD7
 P 7300 3350
 AR Path="/56F507DC/56F600A4/56F60DD7" Ref="D13"  Part="1" 
@@ -71,7 +31,7 @@ F 4 "21-9011" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Jumper_NO_Small JP7
+L Device:Jumper_NO_Small JP7
 U 1 1 56F60DD8
 P 5450 3250
 AR Path="/56F507DC/56F600A4/56F60DD8" Ref="JP7"  Part="1" 
@@ -86,7 +46,7 @@ F 3 "" H 5450 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper_NO_Small JP8
+L Device:Jumper_NO_Small JP8
 U 1 1 56F60DD9
 P 5450 2250
 AR Path="/56F507DC/56F600A4/56F60DD9" Ref="JP8"  Part="1" 
@@ -101,7 +61,7 @@ F 3 "" H 5450 2250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SUPPRESSOR D12
+L tera_general:SUPPRESSOR D12
 U 1 1 56F60DDA
 P 4650 3300
 AR Path="/56F507DC/56F600A4/56F60DDA" Ref="D12"  Part="1" 
@@ -117,7 +77,7 @@ F 4 "21-9011" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R24
+L Device:R_Small R24
 U 1 1 56F60DDB
 P 6250 3850
 AR Path="/56F507DC/56F600A4/56F60DDB" Ref="R24"  Part="1" 
@@ -133,7 +93,7 @@ F 4 "11-60R4" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R25
+L Device:R_Small R25
 U 1 1 56F60DDC
 P 6450 3850
 AR Path="/56F507DC/56F600A4/56F60DDC" Ref="R25"  Part="1" 
@@ -149,13 +109,14 @@ F 4 "11-60R4" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C15
+L Device:C_Small C15
 U 1 1 56F60DDD
 P 6350 4150
 AR Path="/56F507DC/56F600A4/56F60DDD" Ref="C15"  Part="1" 
 AR Path="/56F507DC/56F5B634/56F60DDD" Ref="C16"  Part="1" 
 AR Path="/57F8BCCE/56F5B634/56F60DDD" Ref="C15"  Part="1" 
 AR Path="/57F8BCCE/56F600A4/56F60DDD" Ref="C15"  Part="1" 
+AR Path="/56F60DDD" Ref="C15"  Part="1" 
 F 0 "C15" H 6375 4250 50  0000 L CNN
 F 1 "47n" H 6375 4050 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 6650 4000 30  0001 C CNN
@@ -165,7 +126,7 @@ F 4 "52-47n0" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CM_CHOKE L1
+L tera_general:CM_CHOKE L1
 U 1 1 56F60DE1
 P 5450 2750
 AR Path="/56F507DC/56F600A4/56F60DE1" Ref="L1"  Part="1" 
@@ -181,7 +142,7 @@ F 4 "97-1001" H 0   0   50  0001 C CNN "HPN"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R_Small R23
+L Device:R_Small R23
 U 1 1 56F60DE4
 P 2400 2750
 AR Path="/56F507DC/56F600A4/56F60DE4" Ref="R23"  Part="1" 
@@ -197,13 +158,14 @@ F 4 "11-56K0" H 0   0   50  0001 C CNN "HPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L C C23
+L Device:C_Small C23
 U 1 1 56FCBE36
 P 2700 2250
 AR Path="/56F507DC/56F600A4/56FCBE36" Ref="C23"  Part="1" 
 AR Path="/56F507DC/56F5B634/56FCBE36" Ref="C24"  Part="1" 
 AR Path="/57F8BCCE/56F5B634/56FCBE36" Ref="C23"  Part="1" 
 AR Path="/57F8BCCE/56F600A4/56FCBE36" Ref="C23"  Part="1" 
+AR Path="/56FCBE36" Ref="C23"  Part="1" 
 F 0 "C23" H 2725 2350 50  0000 L CNN
 F 1 "100n" H 2725 2150 50  0000 L CNN
 F 2 "tera_rlc:C_0603in" H 3000 2100 30  0001 C CNN
@@ -213,7 +175,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SN65HVD230 U3
+L tera_logic:SN65HVD230 U3
 U 1 1 57F04781
 P 3500 2650
 AR Path="/56F507DC/56F600A4/57F04781" Ref="U3"  Part="1" 
@@ -229,7 +191,7 @@ F 4 "20-1001" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CAN_CON_2pol P4
+L tera_connectors:CAN_CON_2pol P4
 U 1 1 5808CF6D
 P 8100 2250
 F 0 "P4" V 8094 2122 50  0000 R CNN
@@ -241,9 +203,11 @@ F 4 "02-2902" H 0   0   50  0001 C CNN "HPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C29
+L Device:C_Small C29
 U 1 1 5808FF5B
 P 6850 2750
+AR Path="/5808FF5B" Ref="C29"  Part="1" 
+AR Path="/57F8BCCE/56F600A4/5808FF5B" Ref="C29"  Part="1" 
 F 0 "C29" H 6875 2850 50  0000 L CNN
 F 1 "100p" H 6875 2650 50  0000 L CNN
 F 2 "tera_rlc:R_0603in" H 7150 2600 30  0001 C CNN
@@ -253,7 +217,7 @@ F 4 "50-100p" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SWITCH_DPDT S1
+L tera_switches:SWITCH_DPDT S1
 U 1 1 580A36C4
 P 6400 3350
 F 0 "S1" V 6362 3122 39  0000 R CNN
@@ -293,11 +257,7 @@ CAN_H
 Text HLabel 8550 2900 2    60   BiDi ~ 0
 CAN_L
 Wire Wire Line
-	6250 4000 6450 4000
-Wire Wire Line
 	7300 4500 7300 3450
-Wire Wire Line
-	6350 4500 6350 4300
 Wire Wire Line
 	5000 2250 5350 2250
 Wire Wire Line
@@ -307,9 +267,9 @@ Wire Wire Line
 Wire Wire Line
 	5550 3250 5900 3250
 Wire Wire Line
-	4250 2850 5050 2850
+	4250 2850 4500 2850
 Wire Wire Line
-	4000 2650 5050 2650
+	4000 2650 4800 2650
 Wire Wire Line
 	4650 4500 4650 3400
 Wire Wire Line
@@ -335,23 +295,21 @@ Wire Notes Line
 Wire Notes Line
 	7550 2600 7550 2500
 Wire Wire Line
-	6450 3700 6450 3550
+	6450 3750 6450 3550
 Wire Wire Line
-	6250 3700 6250 3550
+	6250 3750 6250 3550
 Wire Wire Line
-	2200 4500 7300 4500
+	2200 4500 2900 4500
 Wire Wire Line
 	6350 2650 6350 3150
 Wire Wire Line
 	6550 2850 6550 3150
 Wire Wire Line
-	2600 2050 3000 2050
+	2600 2050 2700 2050
 Wire Wire Line
 	3000 2050 3000 2450
 Wire Wire Line
 	2600 2400 2700 2400
-Wire Wire Line
-	2700 2100 2700 2050
 Wire Notes Line
 	7350 2500 7650 2500
 Wire Wire Line
@@ -367,18 +325,13 @@ Wire Wire Line
 Wire Wire Line
 	5900 2250 5900 2650
 Wire Wire Line
-	6700 2900 8550 2900
-Wire Wire Line
 	6700 2850 6700 2900
 Wire Wire Line
-	5850 2850 6700 2850
+	5850 2850 5900 2850
 Wire Wire Line
-	5850 2650 6700 2650
+	5850 2650 5900 2650
 Wire Wire Line
 	6700 2650 6700 2600
-Wire Wire Line
-	6700 2600 8550 2600
-Connection ~ 6350 4000
 Connection ~ 7150 2900
 Connection ~ 7450 2600
 Connection ~ 2900 4500
@@ -395,9 +348,70 @@ Connection ~ 5000 2650
 Connection ~ 5000 2850
 Connection ~ 5900 2850
 Connection ~ 5900 2650
-Connection ~ 6850 2900
-Connection ~ 6850 2600
 NoConn ~ 4000 2450
 NoConn ~ 6550 3550
 NoConn ~ 6350 3550
+Wire Wire Line
+	7150 2900 8050 2900
+Wire Wire Line
+	7450 2600 8150 2600
+Wire Wire Line
+	2900 4500 4650 4500
+Wire Wire Line
+	4650 4500 6350 4500
+Wire Wire Line
+	6350 4500 7300 4500
+Wire Wire Line
+	4500 2850 5000 2850
+Wire Wire Line
+	4800 2650 5000 2650
+Wire Wire Line
+	6350 2650 6700 2650
+Wire Wire Line
+	6550 2850 6700 2850
+Wire Wire Line
+	2700 2050 3000 2050
+Wire Wire Line
+	8050 2900 8550 2900
+Wire Wire Line
+	8150 2600 8550 2600
+Wire Wire Line
+	5000 2650 5050 2650
+Wire Wire Line
+	5000 2850 5050 2850
+Wire Wire Line
+	5900 2850 6550 2850
+Wire Wire Line
+	5900 2650 6350 2650
+Wire Wire Line
+	6250 4000 6350 4000
+Wire Wire Line
+	6700 2900 6850 2900
+Wire Wire Line
+	6700 2600 6850 2600
+Wire Wire Line
+	6250 4000 6250 3950
+Wire Wire Line
+	6450 4000 6450 3950
+Wire Wire Line
+	6350 4050 6350 4000
+Connection ~ 6350 4000
+Wire Wire Line
+	6350 4000 6450 4000
+Wire Wire Line
+	6350 4250 6350 4500
+Wire Wire Line
+	6850 2850 6850 2900
+Connection ~ 6850 2900
+Wire Wire Line
+	6850 2900 7150 2900
+Wire Wire Line
+	6850 2650 6850 2600
+Connection ~ 6850 2600
+Wire Wire Line
+	6850 2600 7450 2600
+Wire Wire Line
+	2700 2350 2700 2400
+Wire Wire Line
+	2700 2050 2700 2150
 $EndSCHEMATC

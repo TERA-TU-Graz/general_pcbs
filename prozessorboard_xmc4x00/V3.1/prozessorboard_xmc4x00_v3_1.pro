@@ -1,20 +1,9 @@
-update=Tue 21 Mar 2017 10:37:15 CET
+update=Tue 02 Jan 2018 17:14:01 CET
 version=1
 last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
-[schematic_editor]
-version=1
-PageLayoutDescrFile=../../../../libs/kicad/tera_page_layout/with_solderpad_hw_licence.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=../../../../libs/kicad/tera_page_layout/with_solderpad_hw_licence.kicad_wks
@@ -128,3 +117,14 @@ LibName85=Worldsemi
 LibName86=Xicor
 LibName87=xilinx
 LibName88=Zilog
+[schematic_editor]
+version=1
+PageLayoutDescrFile=../../../../libs/kicad/tera_page_layout/with_solderpad_hw_licence.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+ERC_TestSimilarLabels=1

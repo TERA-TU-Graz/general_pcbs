@@ -1,0 +1,926 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:tera_general
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:special
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Xicor
+LIBS:Zilog
+LIBS:dcdc_converter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DCDC converter"
+Date "2016-02-09"
+Rev "0"
+Comp "Tera TU Graz"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TLE7368E U1
+U 1 1 56BA5A6E
+P 5650 2450
+F 0 "U1" H 5650 3643 60  0000 C CNN
+F 1 "TLE7368E" H 5650 3537 60  0000 C CNN
+F 2 "tera_general:PG-DSO-36" H 5650 3431 60  0000 C CNN
+F 3 "" H 5650 2550 60  0000 C CNN
+	1    5650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C9
+U 1 1 56BA6007
+P 4550 2850
+F 0 "C9" H 4642 2896 50  0000 L CNN
+F 1 "100n" H 4642 2804 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4642 2758 50  0001 L CNN
+F 3 "" H 4550 2850 50  0000 C CNN
+	1    4550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 56BA6079
+P 4200 2950
+F 0 "C7" H 4292 2996 50  0000 L CNN
+F 1 "100n" H 4292 2904 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4292 2858 50  0001 L CNN
+F 3 "" H 4200 2950 50  0000 C CNN
+	1    4200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 56BA6190
+P 4400 3250
+F 0 "C8" H 4492 3296 50  0000 L CNN
+F 1 "220n" H 4492 3204 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4492 3158 50  0001 L CNN
+F 3 "" H 4400 3250 50  0000 C CNN
+	1    4400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56BA627C
+P 4750 3450
+F 0 "#PWR01" H 4750 3200 50  0001 C CNN
+F 1 "GND" H 4758 3276 50  0000 C CNN
+F 2 "" H 4750 3450 50  0000 C CNN
+F 3 "" H 4750 3450 50  0000 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56BA62D3
+P 4400 3450
+F 0 "#PWR02" H 4400 3200 50  0001 C CNN
+F 1 "GND" H 4408 3276 50  0000 C CNN
+F 2 "" H 4400 3450 50  0000 C CNN
+F 3 "" H 4400 3450 50  0000 C CNN
+	1    4400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 56BA65CD
+P 6550 3450
+F 0 "#PWR03" H 6550 3200 50  0001 C CNN
+F 1 "GND" H 6558 3276 50  0000 C CNN
+F 2 "" H 6550 3450 50  0000 C CNN
+F 3 "" H 6550 3450 50  0000 C CNN
+	1    6550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER3 JP1
+U 1 1 56BA6854
+P 1200 950
+F 0 "JP1" H 1200 1190 50  0000 C CNN
+F 1 "JUMPER3" H 1200 1098 50  0000 C CNN
+F 2 "tera_general:SOLDERJUMPER_3" H 1200 950 50  0001 C CNN
+F 3 "" H 1200 950 50  0000 C CNN
+	1    1200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR04
+U 1 1 56BA70E2
+P 6750 3250
+F 0 "#PWR04" H 6750 3100 50  0001 C CNN
+F 1 "+BATT" H 6768 3424 50  0000 C CNN
+F 2 "" H 6750 3250 50  0000 C CNN
+F 3 "" H 6750 3250 50  0000 C CNN
+	1    6750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR05
+U 1 1 56BA7408
+P 9900 2450
+F 0 "#PWR05" H 9900 2300 50  0001 C CNN
+F 1 "+BATT" H 9918 2624 50  0000 C CNN
+F 2 "" H 9900 2450 50  0000 C CNN
+F 3 "" H 9900 2450 50  0000 C CNN
+	1    9900 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 56BA7425
+P 10550 2650
+F 0 "#PWR06" H 10550 2400 50  0001 C CNN
+F 1 "GND" H 10558 2476 50  0000 C CNN
+F 2 "" H 10550 2650 50  0000 C CNN
+F 3 "" H 10550 2650 50  0000 C CNN
+	1    10550 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 1350 700  0    60   ~ 0
+1-2: Q_STBY=1.0V\n2-3: Q_STBY=2.6V
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 56BA884D
+P 9550 2500
+F 0 "#FLG07" H 9550 2595 50  0001 C CNN
+F 1 "PWR_FLAG" H 9550 2724 50  0000 C CNN
+F 2 "" H 9550 2500 50  0000 C CNN
+F 3 "" H 9550 2500 50  0000 C CNN
+	1    9550 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 56BA8871
+P 10850 2600
+F 0 "#FLG08" H 10850 2695 50  0001 C CNN
+F 1 "PWR_FLAG" H 10850 2823 50  0000 C CNN
+F 2 "" H 10850 2600 50  0000 C CNN
+F 3 "" H 10850 2600 50  0000 C CNN
+	1    10850 2600
+	-1   0    0    1   
+$EndComp
+Text Label 4450 2650 0    60   ~ 0
+SEL_STBY
+Text Label 6800 1950 2    60   ~ 0
+Q_STBY
+Text Label 1200 1500 1    60   ~ 0
+Q_STBY
+Text Label 1850 950  2    60   ~ 0
+SEL_STBY
+$Comp
+L GND #PWR09
+U 1 1 56BA989F
+P 900 950
+F 0 "#PWR09" H 900 700 50  0001 C CNN
+F 1 "GND" H 908 776 50  0000 C CNN
+F 2 "" H 900 950 50  0000 C CNN
+F 3 "" H 900 950 50  0000 C CNN
+	1    900  950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 56BA9C58
+P 10600 1150
+F 0 "R3" H 10670 1196 50  0000 L CNN
+F 1 "10k" H 10670 1104 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 10670 1058 50  0001 L CNN
+F 3 "" H 10600 1150 50  0000 C CNN
+	1    10600 1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56BA9E4D
+P 9700 1150
+F 0 "R2" H 9770 1196 50  0000 L CNN
+F 1 "10k" H 9770 1104 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 9770 1058 50  0001 L CNN
+F 3 "" H 9700 1150 50  0000 C CNN
+	1    9700 1150
+	-1   0    0    -1  
+$EndComp
+Text Label 4450 1850 0    60   ~ 0
+RO_1
+Text Label 9400 1350 0    60   ~ 0
+RO_2
+Text Label 10900 1350 2    60   ~ 0
+RO_1
+Text Label 4450 1950 0    60   ~ 0
+RO_2
+Text Label 4450 1650 0    60   ~ 0
+GND
+Text Label 6800 1650 2    60   ~ 0
+GND
+Text Label 4450 2350 0    60   ~ 0
+Q_T2
+Text Label 4450 2250 0    60   ~ 0
+Q_T1
+$Comp
+L JUMPER3 JP2
+U 1 1 56BB1FAF
+P 1200 2200
+F 0 "JP2" H 1200 2440 50  0000 C CNN
+F 1 "JUMPER3" H 1200 2348 50  0000 C CNN
+F 2 "tera_general:SOLDERJUMPER_3" H 1200 2200 50  0001 C CNN
+F 3 "" H 1200 2200 50  0000 C CNN
+	1    1200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 56BB2033
+P 900 2200
+F 0 "#PWR010" H 900 1950 50  0001 C CNN
+F 1 "GND" H 908 2026 50  0000 C CNN
+F 2 "" H 900 2200 50  0000 C CNN
+F 3 "" H 900 2200 50  0000 C CNN
+	1    900  2200
+	1    0    0    -1  
+$EndComp
+Text Label 1200 2750 1    60   ~ 0
+SEL_LDO2
+Text Label 1850 2200 2    60   ~ 0
+Q_LDO2
+Text Notes 1350 1900 0    60   ~ 0
+1-2: Q_LDO2=2.6V\n2-3: Q_LDO2=3.3V
+Text Label 4450 2150 0    60   ~ 0
+Q_LDO2
+$Comp
+L C_Small C10
+U 1 1 56BB3647
+P 6700 2550
+F 0 "C10" H 6792 2596 50  0000 L CNN
+F 1 "220n" H 6792 2504 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6792 2458 50  0001 L CNN
+F 3 "" H 6700 2550 50  0000 C CNN
+	1    6700 2550
+	1    0    0    -1  
+$EndComp
+Text Label 600  4500 0    60   ~ 0
+Q_LDO1
+$Comp
+L C_Small C1
+U 1 1 56BB4762
+P 1100 4600
+F 0 "C1" H 1192 4646 50  0000 L CNN
+F 1 "1..470u" H 1192 4554 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 1192 4508 50  0001 L CNN
+F 3 "" H 1100 4600 50  0000 C CNN
+	1    1100 4600
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 4550 0    60   ~ 0
+Output capacitors:\n1u..470uF , ESR=0..2 Ohm @ 10kHz
+Text Label 600  5000 0    60   ~ 0
+Q_LDO2
+$Comp
+L C_Small C2
+U 1 1 56BB4C71
+P 1100 5100
+F 0 "C2" H 1192 5146 50  0000 L CNN
+F 1 "1..470u" H 1192 5054 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 1192 5008 50  0001 L CNN
+F 3 "" H 1100 5100 50  0000 C CNN
+	1    1100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 56BB55C4
+P 1100 4750
+F 0 "#PWR011" H 1100 4500 50  0001 C CNN
+F 1 "GND" H 1108 4576 50  0000 C CNN
+F 2 "" H 1100 4750 50  0000 C CNN
+F 3 "" H 1100 4750 50  0000 C CNN
+	1    1100 4750
+	1    0    0    -1  
+$EndComp
+Text Label 1500 4500 0    60   ~ 0
+5V
+Text Label 1500 5000 0    60   ~ 0
+3v3
+$Comp
+L GND #PWR012
+U 1 1 56BB7BC6
+P 1100 5250
+F 0 "#PWR012" H 1100 5000 50  0001 C CNN
+F 1 "GND" H 1108 5076 50  0000 C CNN
+F 2 "" H 1100 5250 50  0000 C CNN
+F 3 "" H 1100 5250 50  0000 C CNN
+	1    1100 5250
+	1    0    0    -1  
+$EndComp
+Text Label 600  5800 0    60   ~ 0
+Q_T1
+Text Label 1500 5800 0    60   ~ 0
+5V_Sensor1
+$Comp
+L C_Small C3
+U 1 1 56BB7F87
+P 1100 5900
+F 0 "C3" H 1192 5946 50  0000 L CNN
+F 1 ">4.7u" H 1192 5854 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 1192 5808 50  0001 L CNN
+F 3 "" H 1100 5900 50  0000 C CNN
+	1    1100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 56BB8038
+P 1100 6050
+F 0 "#PWR013" H 1100 5800 50  0001 C CNN
+F 1 "GND" H 1108 5876 50  0000 C CNN
+F 2 "" H 1100 6050 50  0000 C CNN
+F 3 "" H 1100 6050 50  0000 C CNN
+	1    1100 6050
+	1    0    0    -1  
+$EndComp
+Text Label 600  6300 0    60   ~ 0
+Q_T2
+Text Label 1500 6300 0    60   ~ 0
+5V_Sensor2
+$Comp
+L C_Small C4
+U 1 1 56BB8271
+P 1100 6400
+F 0 "C4" H 1192 6446 50  0000 L CNN
+F 1 ">4.7u" H 1192 6354 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 1192 6308 50  0001 L CNN
+F 3 "" H 1100 6400 50  0000 C CNN
+	1    1100 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 56BB8278
+P 1100 6550
+F 0 "#PWR014" H 1100 6300 50  0001 C CNN
+F 1 "GND" H 1108 6376 50  0000 C CNN
+F 2 "" H 1100 6550 50  0000 C CNN
+F 3 "" H 1100 6550 50  0000 C CNN
+	1    1100 6550
+	1    0    0    -1  
+$EndComp
+Text Notes 2200 5800 0    60   ~ 0
+Tracking capacitors:\n>4.7uF , ESR=0..3 Ohm @ 10kHz
+Text Label 600  6950 0    60   ~ 0
+Q_STBY
+$Comp
+L C_Small C5
+U 1 1 56BB9351
+P 1100 7050
+F 0 "C5" H 1192 7096 50  0000 L CNN
+F 1 "0.47..2u" H 1192 7004 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1192 6958 50  0001 L CNN
+F 3 "" H 1100 7050 50  0000 C CNN
+	1    1100 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 56BB93B2
+P 1100 7200
+F 0 "#PWR015" H 1100 6950 50  0001 C CNN
+F 1 "GND" H 1108 7026 50  0000 C CNN
+F 2 "" H 1100 7200 50  0000 C CNN
+F 3 "" H 1100 7200 50  0000 C CNN
+	1    1100 7200
+	1    0    0    -1  
+$EndComp
+Text Notes 2000 7000 0    60   ~ 0
+Standby capacitor:\n0.47u..2uF , ESR=0..0.5 Ohm @10kHz
+$Comp
+L ZENERsmall Z1
+U 1 1 56BBB1D7
+P 7150 2750
+F 0 "Z1" V 7104 2819 50  0000 L CNN
+F 1 "12V" V 7196 2819 50  0000 L CNN
+F 2 "tera_general:SOD128" H 7150 2750 50  0001 C CNN
+F 3 "" H 7150 2750 50  0000 C CNN
+	1    7150 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 56BBB798
+P 7400 2650
+F 0 "L1" V 7586 2650 50  0000 C CNN
+F 1 "18u..220u" V 7494 2650 50  0000 C CNN
+F 2 "tera_general:Inductance_MSS1260T" V 7494 2650 50  0001 C CNN
+F 3 "" H 7400 2650 50  0000 C CNN
+	1    7400 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C13
+U 1 1 56BBB85E
+P 7800 2750
+F 0 "C13" H 7892 2796 50  0000 L CNN
+F 1 ">20u" H 7892 2704 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 7892 2658 50  0001 L CNN
+F 3 "" H 7800 2750 50  0000 C CNN
+	1    7800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 56BBB8DA
+P 3900 1850
+F 0 "C6" H 3992 1896 50  0000 L CNN
+F 1 "0.33n..4.7n" H 3992 1804 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3992 1758 50  0001 L CNN
+F 3 "" H 3900 1850 50  0000 C CNN
+	1    3900 1850
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 1400 0    60   ~ 0
+C_RT determines reset-off delay \nafter over/undervoltage condition\nt_RD = 160*50us*C_RT/nF
+Text Label 1500 6950 0    60   ~ 0
+V_STBY
+$Comp
+L C_Small C11
+U 1 1 56BC0F92
+P 7000 2250
+F 0 "C11" H 6908 2204 50  0000 R CNN
+F 1 "220n" H 6908 2296 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 7092 2158 50  0001 L CNN
+F 3 "" H 7000 2250 50  0000 C CNN
+	1    7000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 56BC113D
+P 7000 2350
+F 0 "#PWR016" H 7000 2100 50  0001 C CNN
+F 1 "GND" H 7008 2176 50  0000 C CNN
+F 2 "" H 7000 2350 50  0000 C CNN
+F 3 "" H 7000 2350 50  0000 C CNN
+	1    7000 2350
+	1    0    0    -1  
+$EndComp
+Text Label 6800 2250 2    60   ~ 0
+Q_LDO1
+$Comp
+L GND #PWR017
+U 1 1 56BC3CF3
+P 3900 2000
+F 0 "#PWR017" H 3900 1750 50  0001 C CNN
+F 1 "GND" H 3908 1826 50  0000 C CNN
+F 2 "" H 3900 2000 50  0000 C CNN
+F 3 "" H 3900 2000 50  0000 C CNN
+	1    3900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 56BC626F
+P 7150 2900
+F 0 "#PWR018" H 7150 2650 50  0001 C CNN
+F 1 "GND" H 7158 2726 50  0000 C CNN
+F 2 "" H 7150 2900 50  0000 C CNN
+F 3 "" H 7150 2900 50  0000 C CNN
+	1    7150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 56BC62BF
+P 7800 2900
+F 0 "#PWR019" H 7800 2650 50  0001 C CNN
+F 1 "GND" H 7808 2726 50  0000 C CNN
+F 2 "" H 7800 2900 50  0000 C CNN
+F 3 "" H 7800 2900 50  0000 C CNN
+	1    7800 2900
+	1    0    0    -1  
+$EndComp
+Text Label 6800 2350 2    60   ~ 0
+BuckOut
+Text Label 4450 2050 0    60   ~ 0
+BuckOut
+Text Label 7950 2650 0    60   ~ 0
+BuckOut
+Text Label 6900 2950 2    60   ~ 0
+SEL_LDO2
+$Comp
+L R R1
+U 1 1 56BDDA6C
+P 3550 2300
+F 0 "R1" H 3620 2346 50  0000 L CNN
+F 1 "100k" H 3620 2254 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3480 2300 50  0001 C CNN
+F 3 "" H 3550 2300 50  0000 C CNN
+	1    3550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR020
+U 1 1 56BDE2C7
+P 3550 2100
+F 0 "#PWR020" H 3550 1950 50  0001 C CNN
+F 1 "+BATT" H 3568 2274 50  0000 C CNN
+F 2 "" H 3550 2100 50  0000 C CNN
+F 3 "" H 3550 2100 50  0000 C CNN
+	1    3550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 56BDE31A
+P 4700 2450
+F 0 "#PWR021" H 4700 2200 50  0001 C CNN
+F 1 "GND" V 4708 2322 50  0000 R CNN
+F 2 "" H 4700 2450 50  0000 C CNN
+F 3 "" H 4700 2450 50  0000 C CNN
+	1    4700 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C12
+U 1 1 56BDFAA3
+P 7350 1950
+F 0 "C12" H 7258 1904 50  0000 R CNN
+F 1 "220n" H 7258 1996 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805" H 7442 1858 50  0001 L CNN
+F 3 "" H 7350 1950 50  0000 C CNN
+	1    7350 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 56BDFC71
+P 7350 2100
+F 0 "#PWR022" H 7350 1850 50  0001 C CNN
+F 1 "GND" H 7358 1926 50  0000 C CNN
+F 2 "" H 7350 2100 50  0000 C CNN
+F 3 "" H 7350 2100 50  0000 C CNN
+	1    7350 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6450 1750
+NoConn ~ 6450 2850
+Text Notes 2800 2650 0    60   ~ 0
+Note: 100k could be too big...
+$Comp
+L CONN_02X02 P3
+U 1 1 56BEA14B
+P 10250 2550
+F 0 "P3" H 10250 2816 50  0000 C CNN
+F 1 "CONN_PWRIN" H 10250 2724 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 10250 1350 50  0001 C CNN
+F 3 "" H 10250 1350 50  0000 C CNN
+	1    10250 2550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6450 2750
+$Comp
+L PWR_FLAG #FLG023
+U 1 1 56BEC31B
+P 7800 2650
+F 0 "#FLG023" H 7800 2745 50  0001 C CNN
+F 1 "PWR_FLAG" H 7800 2874 50  0000 C CNN
+F 2 "" H 7800 2650 50  0000 C CNN
+F 3 "" H 7800 2650 50  0000 C CNN
+	1    7800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Small D1
+U 1 1 56BEE0E5
+P 7900 1850
+F 0 "D1" H 7900 2056 50  0000 C CNN
+F 1 "BAT54-02" H 7900 1964 50  0000 C CNN
+F 2 "tera_general:SC79" H 7900 1964 50  0001 C CNN
+F 3 "" H 7900 1964 50  0000 C CNN
+	1    7900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR024
+U 1 1 56BEE21E
+P 8150 1800
+F 0 "#PWR024" H 8150 1650 50  0001 C CNN
+F 1 "+BATT" H 8168 1974 50  0000 C CNN
+F 2 "" H 8150 1800 50  0000 C CNN
+F 3 "" H 8150 1800 50  0000 C CNN
+	1    8150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X06 P1
+U 1 1 56C1B2B0
+P 10150 1600
+F 0 "P1" H 10150 2066 50  0000 C CNN
+F 1 "CONN_02X06" H 10150 1974 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06" H 10150 400 50  0001 C CNN
+F 3 "" H 10150 400 50  0000 C CNN
+	1    10150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2850 4850 2850
+Wire Wire Line
+	4200 3050 4850 3050
+Wire Wire Line
+	4550 2950 4850 2950
+Wire Wire Line
+	4550 2750 4850 2750
+Wire Wire Line
+	4850 3150 4400 3150
+Wire Wire Line
+	4750 3250 4750 3450
+Wire Wire Line
+	4750 3350 4850 3350
+Wire Wire Line
+	4750 3250 4850 3250
+Connection ~ 4750 3350
+Wire Wire Line
+	4400 3350 4400 3450
+Wire Wire Line
+	6550 3450 6550 3350
+Wire Wire Line
+	6550 3350 6450 3350
+Wire Wire Line
+	4450 1650 4850 1650
+Wire Wire Line
+	6450 1650 6800 1650
+Wire Wire Line
+	6450 3250 6750 3250
+Wire Wire Line
+	6550 3050 6550 3250
+Connection ~ 6550 3250
+Wire Wire Line
+	9550 2500 10000 2500
+Wire Wire Line
+	9900 2450 9900 2600
+Wire Wire Line
+	10500 2600 10850 2600
+Wire Wire Line
+	10550 2500 10550 2650
+Connection ~ 9900 2500
+Connection ~ 10550 2600
+Wire Wire Line
+	6450 1950 6800 1950
+Wire Wire Line
+	4850 2650 4450 2650
+Wire Wire Line
+	950  950  900  950 
+Wire Wire Line
+	1450 950  1850 950 
+Wire Wire Line
+	1200 1500 1200 1050
+Wire Wire Line
+	4450 1850 4850 1850
+Wire Wire Line
+	10400 1350 10900 1350
+Wire Wire Line
+	9400 1350 9900 1350
+Connection ~ 9700 1350
+Connection ~ 10600 1350
+Wire Wire Line
+	10600 1350 10600 1300
+Wire Wire Line
+	4850 1950 4450 1950
+Wire Wire Line
+	4850 2250 4450 2250
+Wire Wire Line
+	4850 2350 4450 2350
+Wire Wire Line
+	900  2200 950  2200
+Wire Wire Line
+	1200 2300 1200 2750
+Wire Wire Line
+	1450 2200 1850 2200
+Wire Wire Line
+	4850 2150 4450 2150
+Wire Wire Line
+	6450 2450 6700 2450
+Wire Wire Line
+	6450 2550 6450 2650
+Wire Wire Line
+	6450 2650 7300 2650
+Wire Wire Line
+	6450 2250 6800 2250
+Wire Wire Line
+	600  4500 1500 4500
+Connection ~ 1100 4500
+Wire Wire Line
+	600  5000 1500 5000
+Connection ~ 1100 5000
+Wire Wire Line
+	1100 4750 1100 4700
+Wire Notes Line
+	500  4300 3800 4300
+Wire Notes Line
+	3800 4300 3800 7750
+Wire Wire Line
+	1100 5250 1100 5200
+Wire Wire Line
+	600  5800 1500 5800
+Connection ~ 1100 5800
+Wire Wire Line
+	1100 6050 1100 6000
+Wire Wire Line
+	600  6300 1500 6300
+Connection ~ 1100 6300
+Wire Wire Line
+	1100 6550 1100 6500
+Wire Wire Line
+	600  6950 1500 6950
+Connection ~ 1100 6950
+Wire Wire Line
+	1100 7200 1100 7150
+Wire Wire Line
+	6450 2050 6500 2050
+Wire Wire Line
+	6500 2050 6500 2150
+Wire Wire Line
+	6450 2150 7000 2150
+Connection ~ 6500 2150
+Wire Wire Line
+	7000 2350 7000 2350
+Wire Wire Line
+	4850 1750 3900 1750
+Wire Wire Line
+	3900 2000 3900 1950
+Wire Wire Line
+	7500 2650 7950 2650
+Connection ~ 6700 2650
+Connection ~ 7150 2650
+Wire Wire Line
+	7800 2900 7800 2850
+Wire Wire Line
+	7150 2900 7150 2850
+Connection ~ 7800 2650
+Wire Wire Line
+	6450 2350 6800 2350
+Wire Wire Line
+	4850 2050 4450 2050
+Wire Wire Line
+	6450 2950 6900 2950
+Wire Wire Line
+	6550 3050 6450 3050
+Wire Wire Line
+	6450 3150 6550 3150
+Connection ~ 6550 3150
+Wire Wire Line
+	3550 2450 3550 2550
+Wire Wire Line
+	3550 2550 4850 2550
+Wire Wire Line
+	3550 2150 3550 2100
+Wire Wire Line
+	4850 2450 4700 2450
+Wire Wire Line
+	6450 1850 7800 1850
+Wire Wire Line
+	7350 2050 7350 2100
+Wire Wire Line
+	10500 2500 10550 2500
+Wire Wire Line
+	9900 2600 10000 2600
+Connection ~ 7350 1850
+Wire Wire Line
+	8000 1850 8150 1850
+Wire Wire Line
+	8150 1850 8150 1800
+Wire Wire Line
+	10400 1850 10450 1850
+Connection ~ 10450 1850
+Wire Wire Line
+	10400 1750 10450 1750
+Connection ~ 10450 1750
+Wire Wire Line
+	10400 1650 10450 1650
+Connection ~ 10450 1650
+Wire Wire Line
+	10400 1550 10450 1550
+Connection ~ 10450 1550
+Wire Wire Line
+	10400 1450 10450 1450
+Connection ~ 10450 1450
+$Comp
+L GND #PWR025
+U 1 1 56C1B89C
+P 10450 1900
+F 0 "#PWR025" H 10450 1650 50  0001 C CNN
+F 1 "GND" H 10458 1726 50  0000 C CNN
+F 2 "" H 10450 1900 50  0000 C CNN
+F 3 "" H 10450 1900 50  0000 C CNN
+	1    10450 1900
+	1    0    0    -1  
+$EndComp
+Text Label 9400 1650 0    60   ~ 0
+3v3
+Text Label 9400 1550 0    60   ~ 0
+5V_Sensor1
+Text Label 9400 1850 0    60   ~ 0
+V_STBY
+Text Label 9400 1750 0    60   ~ 0
+5V
+Text Label 9400 1450 0    60   ~ 0
+5V_Sensor2
+Wire Wire Line
+	9900 1450 9400 1450
+Wire Wire Line
+	9900 1550 9400 1550
+Wire Wire Line
+	9900 1650 9400 1650
+Wire Wire Line
+	9900 1750 9400 1750
+Wire Wire Line
+	9900 1850 9400 1850
+Wire Wire Line
+	9700 1350 9700 1300
+Wire Wire Line
+	10450 1450 10450 1900
+Wire Wire Line
+	9700 1000 9700 950 
+Wire Wire Line
+	10600 1000 10600 950 
+Text Label 9700 950  0    60   ~ 0
+3v3
+Text Label 10600 950  0    60   ~ 0
+3v3
+$EndSCHEMATC

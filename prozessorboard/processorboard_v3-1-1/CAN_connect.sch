@@ -1,46 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ft232rl
-LIBS:relais
-LIBS:Supply
-LIBS:tera_general
-LIBS:tera_logic
-LIBS:tera_processors
-LIBS:tera_switches
-LIBS:local_pwr
-LIBS:tera_connectors
-LIBS:tera_emc_prodection
-LIBS:local_special
+EESchema Schematic File Version 4
 LIBS:stm32f4-board_v3-x-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -68,7 +28,7 @@ F7 "CAN_H" B R 6500 1700 60
 F8 "CAN_L" B R 6500 1850 60 
 $EndSheet
 $Comp
-L SN65HVD230 U2
+L tera_logic:SN65HVD230 U2
 U 1 1 57F8E8FC
 P 6050 3300
 F 0 "U2" H 6050 3787 60  0000 C CNN
@@ -80,7 +40,7 @@ F 4 "20-1001" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C17
+L Device:C_Small C17
 U 1 1 57F91A9B
 P 5200 2950
 F 0 "C17" H 5292 2996 50  0000 L CNN
@@ -92,7 +52,7 @@ F 4 "52-100n" H 0   0   50  0001 C CNN "HPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R8
+L Device:R_Small R8
 U 1 1 580DEA21
 P 4950 3400
 F 0 "R8" V 5050 3250 50  0000 L CNN
@@ -136,15 +96,13 @@ GND
 Text HLabel 5150 3050 0    60   Input ~ 0
 GND
 Wire Wire Line
-	5600 1500 5600 1500
-Wire Wire Line
 	4700 3200 5550 3200
 Wire Wire Line
 	5550 3300 4700 3300
 Wire Wire Line
 	5150 3050 5200 3050
 Wire Wire Line
-	5150 2850 5550 2850
+	5150 2850 5200 2850
 Wire Wire Line
 	5550 2850 5550 3100
 Wire Wire Line
@@ -153,4 +111,6 @@ Wire Wire Line
 	4700 3400 4850 3400
 Connection ~ 5200 2850
 NoConn ~ 6550 3100
+Wire Wire Line
+	5200 2850 5550 2850
 $EndSCHEMATC

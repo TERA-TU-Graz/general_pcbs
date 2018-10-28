@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name stm32f4-board_v3-x-rescue)(type Legacy)(uri ${KIPRJMOD}/stm32f4-board_v3-x-rescue.lib)(options "")(descr ""))
+  (lib (name local_pwr)(type Legacy)(uri ${KIPRJMOD}/local_libs/local_pwr.lib)(options "")(descr ""))
+  (lib (name local_special)(type Legacy)(uri ${KIPRJMOD}/local_libs/local_special.lib)(options "")(descr ""))
+)
